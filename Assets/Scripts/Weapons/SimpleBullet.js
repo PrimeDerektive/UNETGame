@@ -2,7 +2,8 @@
 
 #pragma strict
 
-var speed : float = 10;
+var speed : float = 100;
+var spread : float = 0.1;
 var lifeTime : float = 0.5;
 var dist : float = 10000;
 
@@ -11,6 +12,9 @@ private var tr : Transform;
 
 function OnEnable () {
 	tr = transform;
+	tr.Rotate(
+		Vector3(Random.Range(-spread, spread), Random.Range(-spread, spread), 0)
+	);
 	spawnTime = Time.time;
 }
 

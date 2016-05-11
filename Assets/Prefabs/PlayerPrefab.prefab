@@ -96,7 +96,7 @@ GameObject:
   - 114: {fileID: 11407426}
   - 114: {fileID: 11485118}
   - 114: {fileID: 11474724}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: PlayerPrefab
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -130,7 +130,8 @@ GameObject:
   - 33: {fileID: 3371306}
   - 23: {fileID: 2310200}
   - 136: {fileID: 13667842}
-  m_Layer: 10
+  - 114: {fileID: 11434850}
+  m_Layer: 9
   m_Name: CharacterBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,9 +166,10 @@ GameObject:
   - 33: {fileID: 3354234}
   - 135: {fileID: 13559904}
   - 23: {fileID: 2379190}
-  m_Layer: 10
+  - 114: {fileID: 11479408}
+  m_Layer: 9
   m_Name: CharacterHead
-  m_TagString: Untagged
+  m_TagString: Head
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -630,6 +632,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aimTarget: {fileID: 445918}
+--- !u!114 &11434850
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bcc290dc46fe43e185667808b07a70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  col: {fileID: 13667842}
 --- !u!114 &11436400
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -748,6 +763,19 @@ MonoBehaviour:
   - timestamp: 0
     pos: {x: 0, y: 0, z: 0}
     aimPos: {x: 0, y: 0, z: 0}
+--- !u!114 &11479408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 174978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bcc290dc46fe43e185667808b07a70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 1
+  col: {fileID: 13559904}
 --- !u!114 &11485118
 MonoBehaviour:
   m_ObjectHideFlags: 1

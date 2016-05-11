@@ -1,11 +1,8 @@
 ﻿#pragma strict
 
 var id : byte;
+var col : Collider;
 
 function Start () {
-
-}
-
-function Update () {
-
+	if(!col) col = GetComponent.<Collider>();
 }

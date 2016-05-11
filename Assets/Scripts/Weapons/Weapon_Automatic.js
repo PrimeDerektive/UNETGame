@@ -61,9 +61,13 @@ public class Weapon_Automatic extends NetworkBehaviour{
 		var hit : RaycastHit;
 		if(Physics.Raycast(barrel.position, barrel.forward, hit, range, layerMask)){
 			//var newHitEffect : Transform = Transform.Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
-			if(hit.collider.tag == "Player" && isLocalPlayer){ //the local player must claim hits if he thinks he hit stuff
-				var netId = hit.collider.GetComponent.<NetworkIdentity>().netId.Value;
-				CmdHitClaim(netId);
+			
+			//check if we hit a damagable entity's hitbox
+			var hitbox = hit.collider.GetComponent.<Hitbox>();
+			if(hitbox && isLocalPlayer){ //the local player must claim hits if he thinks he hit stuff
+				//get the network ID of the root parent of the hitbox object
+				var netId = hitbox.transform.root.GetComponent.<NetworkIdentity>().netId.Value; 
+				CmdHitClaim(netId, hitbox.id);
 			}
 			tracerScript.dist = hit.distance;
 		}
@@ -90,17 +94,20 @@ public class Weapon_Automatic extends NetworkBehaviour{
 	}
 
 	@Command(channel=1)
-	function CmdHitClaim(id : uint){
-		var netObjects : NetworkIdentity[] = FindObjectsOfType(NetworkIdentity) as NetworkIdentity[];
-		for (var netObject : NetworkIdentity in netObjects){
-			if(netObject.netId.Value == id){
-				var hitObject : Transform = netObject.transform;
-				var aimDir : Vector3 = (aimTarget.position - barrel.position).normalized;
-				var aimPos = barrel.position + (aimDir * Vector3.Distance(hitObject.position, barrel.position));
-				var offset = Vector3.Distance(hitObject.position, aimPos);
-				Debug.Log("Player claims he hit " + netObject.transform.name +" with offset: " + offset +" bounds: " + hitObject.GetComponent.<CharacterController>().bounds.size);
-			}
-		}
+	function CmdHitClaim(nId : uint, hitboxId : byte){
+
+		//find the network object that the shooter claims he shot
+		var hitObject : NetworkIdentity = Utilities.FindNetworkObject(nId);
+
+		//find the hitbox of the object that the shooter claims he hit
+		var hitbox : Hitbox = hitObject.GetComponent.<HitboxController>().FindHitbox(hitboxId);
+
+		var aimDir : Vector3 = (GetComponent.<NetworkInterpolatedTransform>().bufferedStates[0].aimPos - barrel.position).normalized;
+		var aimPos = barrel.position + (aimDir * Vector3.Distance(hitbox.transform.position, barrel.position));
+		var offset = Vector3.Distance(hitbox.transform.position, aimPos);
+
+		Debug.Log("Client claims he hit: " + hitbox.transform.name + ", with offset: " + offset + ", bounds: " + hitbox.col.bounds.size.magnitude);
+		
 	}
 
 }
