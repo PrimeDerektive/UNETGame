@@ -1,16 +1,26 @@
 ﻿#pragma strict
 
-var speed : float = 6.0;
+var speed : float = 3.0;
+var smoothing : float = 5.0;
 var jumpSpeed : float = 15.0;
 var gravity : float = 10.0;
  
+private var xSmooth : float = 0.0;
+private var zSmooth : float = 0.0;
 private var moveDirection = Vector3.zero;
 private var grounded : boolean = false;
+
+
+
  
 function FixedUpdate() {
     if (grounded) {
         // We are grounded, so recalculate movedirection directly from axes
-        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+
+        xSmooth = Mathf.Lerp(xSmooth, Input.GetAxis("Horizontal"), Time.deltaTime * smoothing);
+        zSmooth = Mathf.Lerp(zSmooth, Input.GetAxis("Vertical"), Time.deltaTime * smoothing);
+
+        moveDirection = new Vector3(xSmooth, 0, zSmooth);
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection *= speed;
        

@@ -1,7 +1,5 @@
 ﻿#pragma strict
 
-#pragma strict
-
 var speed : float = 100;
 var spread : float = 0.1;
 var lifeTime : float = 0.5;

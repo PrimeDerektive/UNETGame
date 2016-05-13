@@ -96,6 +96,7 @@ GameObject:
   - 114: {fileID: 11407426}
   - 114: {fileID: 11485118}
   - 114: {fileID: 11474724}
+  - 114: {fileID: 11460200}
   m_Layer: 8
   m_Name: PlayerPrefab
   m_TagString: Player
@@ -607,6 +608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  smoothing: 5
   jumpSpeed: 5
   gravity: 15
 --- !u!114 &11419456
@@ -688,6 +690,21 @@ MonoBehaviour:
     i15: 162
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &11460200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc6b322b39fe4ac5b58626d0e36f96b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireRate: 0.33
+  aimTarget: {fileID: 445918}
+  barrel: {fileID: 433966}
+  projectile: {fileID: 194776, guid: 537d443026ec4472b8a2d1ac61b2d7ae, type: 2}
 --- !u!114 &11474724
 MonoBehaviour:
   m_ObjectHideFlags: 1
