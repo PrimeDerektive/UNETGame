@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TransformSyncMode: 3
-  m_SendInterval: 0.16666667
+  m_SendInterval: 0
   m_SyncRotationAxis: 7
   m_RotationSyncCompression: 2
   m_SyncSpin: 0
@@ -145,9 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a05e874da3e744deb662bb6cc75250e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 5
-  explosionPrefab: {fileID: 180702, guid: a7c694f0877ea874fa57e033221095c3, type: 2}
-  spawnRotation: {x: 90, y: 0, z: 90, w: 0}
+  lifeTime: 3
+  explosionPrefab: {fileID: 133966, guid: d2c4ad4ebc7d4b94f98b8889de1d1bfa, type: 2}
 --- !u!136 &13634318
 CapsuleCollider:
   m_ObjectHideFlags: 1
