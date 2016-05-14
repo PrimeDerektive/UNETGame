@@ -12,6 +12,7 @@ public class Weapon_Automatic extends NetworkBehaviour{
 	public var shotSound : AudioClip;
 	public var falloffSound : AudioClip;
 	public var tracerPrefab : Transform;
+	public var hitEffect : GameObject;
 	var range : float = 250.0;
 	public var layerMask : LayerMask;
 
@@ -69,6 +70,7 @@ public class Weapon_Automatic extends NetworkBehaviour{
 				var netId = hitbox.transform.root.GetComponent.<NetworkIdentity>().netId.Value; 
 				CmdHitClaim(netId, hitbox.id);
 			}
+			Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
 			tracerScript.dist = hit.distance;
 		}
 		else{

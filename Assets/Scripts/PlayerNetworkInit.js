@@ -15,14 +15,13 @@ public class PlayerNetworkInit extends NetworkBehaviour{
 
 	function OnStartLocalPlayer(){
 		GetComponent.<PlayerMoveController>().enabled = true;
-		GetComponent.<MatchCameraEulerY>().enabled = true;
-		GetComponent.<AimTargetController>().enabled = true;
 		Camera.main.SendMessageUpwards("SetTarget", transform, SendMessageOptions.DontRequireReceiver);
 		transform.name = "Player " + GetComponent.<NetworkIdentity>().netId;
 		//newly connecting client request to have their network clocks initialized
 		if(!isServer){
 			CmdRequestNetworkTime();
 		}
+		Debug.Log(GetComponent.<NetworkIdentity>().netId.Value);
 	}
 
 	//called on client, executed on server
