@@ -4,13 +4,18 @@ public class WeaponController extends NetworkBehaviour{
 
 	var weapons : Weapon[];
 	var activeWeapon : Weapon;
+	var aimTarget : Transform;
+	var layerMask : LayerMask; //the global layermask for what weapons can hit
 
-	//@SyncVar(hook="OnFiringUpdate")
+	var testHitEffect : GameObject;
+
+	@SyncVar(hook="OnFiringUpdate")
 	public var firing : boolean = false;
 
 	private var nextFireAllowed : float = 0.0;
 
 	function Start(){
+		//select the first weapon for testing
 		activeWeapon = weapons[0];
 	}
 
@@ -36,6 +41,7 @@ public class WeaponController extends NetworkBehaviour{
 			else if(activeWeapon.fireType == WeaponFireType.semiAuto){
 
 				if(Input.GetButtonDown("Fire1") && Time.time > nextFireAllowed){
+					Fire();
 					//CmdFire();
 					nextFireAllowed = Time.time + activeWeapon.fireRate;
 				}
@@ -44,7 +50,9 @@ public class WeaponController extends NetworkBehaviour{
 			
 		}
 
-		if(firing && Time.time > nextFireAllowed){
+		//this code is executed on all clients, both owner and remote
+		//to trigger firing of active weapon if it is fullAuto
+		if(firing && Time.time > nextFireAllowed && activeWeapon.fireType == WeaponFireType.fullAuto){
 			Fire();
 			nextFireAllowed = Time.time + activeWeapon.fireRate;
 		}
@@ -58,7 +66,51 @@ public class WeaponController extends NetworkBehaviour{
 		firing = newFiringValue;
 	}
 
+	//client side SyncVar callback
+	function OnFiringUpdate(newFiringValue : boolean){
+		//local plaer doesn't need to update firing because he did it himself
+		//with client side prediction
+		if(isLocalPlayer){
+			return;
+		}
+		firing = newFiringValue;
+	}
+
+	//this is the general fire function for all weapons
 	function Fire(){
+
+		//point the active weapon's barrel at the aimTarget
+		activeWeapon.barrel.LookAt(aimTarget);
+
+		//enable the muzzle flash
+		activeWeapon.StartCoroutine("EnableMuzzleFlash");
+
+		//play the shot sound
+		GetComponent.<AudioSource>().PlayOneShot(activeWeapon.shotSound, 1.0);
+
+		//shake the camera
+		CameraShakeManager.instance.Shake(Vector3(1.25, 0.5, 0.5), 0.6);
+
+		//if the active weapon is a hitscan weapon
+		if(activeWeapon.projectileType == WeaponProjectileType.hitscan){
+
+			//if the active weapon has a tracer, create it at the barrel coordinates and store a reference to its script
+			if(activeWeapon.tracer){
+				var tracer = GameObject.Instantiate(activeWeapon.tracer, activeWeapon.barrel.position, activeWeapon.barrel.rotation);
+				//cache a reference to the tracer script
+				var tracerScript = tracer.GetComponent.<SimpleBullet>();
+			}
+
+			//cast the hitscan ray
+			var hit : RaycastHit;
+			if(Physics.Raycast(activeWeapon.barrel.position, activeWeapon.barrel.forward, hit, activeWeapon.range, layerMask)){
+				Instantiate(testHitEffect, hit.point, Quaternion.LookRotation(hit.normal));
+				if(tracerScript) tracerScript.dist = hit.distance; //set the lifetime of the tracer
+			}
+			else{
+				if(tracerScript) tracerScript.dist = activeWeapon.range; //set the lifetime of the tracer
+			}
+		}
 
 	}
 

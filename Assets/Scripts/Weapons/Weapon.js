@@ -2,9 +2,13 @@ public class Weapon extends MonoBehaviour{
 
 	var fireType : WeaponFireType;
 	var projectileType : WeaponProjectileType;
+	var fireRate : float;
+	var barrel : Transform;
+	var range : float;
 	var projectile : GameObject;
 	var shotSound : AudioClip;
 	var muzzleFlash : GameObject;
+	var tracer : GameObject;
 
 	function EnableMuzzleFlash() : IEnumerator{
 		muzzleFlash.SetActive(true);

@@ -15,10 +15,23 @@ private var grounded : boolean = false;
  
 function FixedUpdate() {
     if (grounded) {
-        // We are grounded, so recalculate movedirection directly from axes
 
-        xSmooth = Mathf.Lerp(xSmooth, Input.GetAxis("Horizontal"), Time.deltaTime * smoothing);
-        zSmooth = Mathf.Lerp(zSmooth, Input.GetAxis("Vertical"), Time.deltaTime * smoothing);
+    	var xInput = Input.GetAxis("Horizontal");
+    	var zInput = Input.GetAxis("Vertical");
+
+    	//if the player is moving diagonally
+        if(
+	        (xInput == 1.0 || xInput == -1.0) &&
+	        (zInput == 1.0 || zInput == -1.0)
+        ){
+        	//multiply both axes by 0.7071 so they can't move faster diagonally
+        	xInput *= 0.7071;
+        	zInput *= 0.7071;
+        }
+
+        //smooth the input out so the character moves smoothly
+        xSmooth = Mathf.Lerp(xSmooth, xInput, Time.deltaTime * smoothing);
+        zSmooth = Mathf.Lerp(zSmooth, zInput, Time.deltaTime * smoothing);
 
         moveDirection = new Vector3(xSmooth, 0, zSmooth);
         moveDirection = transform.TransformDirection(moveDirection);
