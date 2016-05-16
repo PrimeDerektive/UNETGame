@@ -89,7 +89,7 @@ public class WeaponController extends NetworkBehaviour{
 		GetComponent.<AudioSource>().PlayOneShot(activeWeapon.shotSound, 1.0);
 
 		//shake the camera
-		CameraShakeManager.instance.Shake(Vector3(1.25, 0.5, 0.5), 0.6);
+		CameraShakeManager.instance.Shake(Vector3(1.0, 0.33, 0.33), 0.5, activeWeapon.barrel.position);
 
 		//if the active weapon is a hitscan weapon
 		if(activeWeapon.projectileType == WeaponProjectileType.hitscan){
@@ -110,6 +110,16 @@ public class WeaponController extends NetworkBehaviour{
 			else{
 				if(tracerScript) tracerScript.dist = activeWeapon.range; //set the lifetime of the tracer
 			}
+		}
+		else if(activeWeapon.projectileType == WeaponProjectileType.projectile){
+
+			if(isServer){
+				activeWeapon.barrel.LookAt(aimTarget);
+				var newProjectile  = GameObject.Instantiate(activeWeapon.projectile, activeWeapon.barrel.position, activeWeapon.barrel.rotation);
+				newProjectile.GetComponent.<Rocket>().creator = this.transform;
+				NetworkServer.Spawn(newProjectile);
+			}
+
 		}
 
 	}

@@ -1,5 +1,20 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100714
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493108}
+  m_Layer: 0
+  m_Name: Barrel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &100770
 GameObject:
   m_ObjectHideFlags: 1
@@ -459,6 +474,7 @@ GameObject:
   - 114: {fileID: 11491622}
   - 114: {fileID: 11412916}
   - 114: {fileID: 11467940}
+  - 114: {fileID: 11413856}
   m_Layer: 8
   m_Name: PlayerPrefab
   m_TagString: Player
@@ -580,7 +596,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &171976
 GameObject:
   m_ObjectHideFlags: 1
@@ -713,7 +729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &185728
 GameObject:
   m_ObjectHideFlags: 1
@@ -1375,6 +1391,7 @@ Transform:
   - {fileID: 415198}
   - {fileID: 486546}
   - {fileID: 466452}
+  - {fileID: 493108}
   m_Father: {fileID: 402556}
   m_RootOrder: 1
 --- !u!4 &479306
@@ -1433,7 +1450,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 149158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.594286, y: -0.856, z: -8.204049}
+  m_LocalPosition: {x: 1.7386652, y: -2, z: 1.7950814}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 445918}
@@ -1465,6 +1482,18 @@ Transform:
   - {fileID: 438010}
   m_Father: {fileID: 415030}
   m_RootOrder: 2
+--- !u!4 &493108
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.38, z: 0.62}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 478306}
+  m_RootOrder: 8
 --- !u!4 &494326
 Transform:
   m_ObjectHideFlags: 1
@@ -1842,7 +1871,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.011023402, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000016742145, y: 0.16483063, z: -1.0766598}
+  m_ConnectedAnchor: {x: -0.000000108398226, y: 0.16483015, z: -1.0766602}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -2236,6 +2265,26 @@ MonoBehaviour:
   shotSound: {fileID: 8300000, guid: b0f8073d7a94d414092a202af27aad4c, type: 3}
   muzzleFlash: {fileID: 133992}
   tracer: {fileID: 196348, guid: a55c590e891a04b1a98cba9cb04681c9, type: 2}
+--- !u!114 &11413856
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a88a77d2b2f4d5d9e0eea8f8be3fce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireType: 1
+  projectileType: 1
+  fireRate: 0.75
+  barrel: {fileID: 493108}
+  range: 250
+  projectile: {fileID: 189638, guid: 451e1d42f132a4d1fadc1bfb8ce76e00, type: 2}
+  shotSound: {fileID: 8300000, guid: 955e0ba3fca4e47f5b80e51191e9fbc2, type: 3}
+  muzzleFlash: {fileID: 0}
+  tracer: {fileID: 0}
 --- !u!114 &11418252
 MonoBehaviour:
   m_ObjectHideFlags: 1

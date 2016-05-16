@@ -24,7 +24,7 @@ public class Weapon_GrenadeThrow extends NetworkBehaviour{
 	function CmdFire(){
 		barrel.LookAt(aimTarget);
 		var newProjectile  = GameObject.Instantiate(projectile, barrel.position, barrel.rotation);
-		newProjectile.GetComponent.<Rigidbody>().velocity = barrel.forward * 20.0;
+		//newProjectile.GetComponent.<Rigidbody>().velocity = barrel.forward * 20.0;
 		NetworkServer.Spawn(newProjectile);
 	}
 

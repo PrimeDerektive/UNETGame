@@ -1,4 +1,5 @@
 #pragma strict
+import UnityEngine.Networking;
 
 public class Grenade extends NetworkBehaviour{
 
@@ -9,12 +10,14 @@ public class Grenade extends NetworkBehaviour{
 
 	function OnEnable () {
 		Invoke("Explode", lifeTime);
+		GetComponent.<Rigidbody>().AddForce(transform.forward * 750.0);
+		GetComponent.<Rigidbody>().angularVelocity = Vector3(10.0, 0, 0);
 	}
 
 
 	function Explode(){
 		if(isServer){
-			NetworkServer.Destroy(this.gameObject);
+			NetworkServer.Destroy(gameObject);
 		}
 	}
 
