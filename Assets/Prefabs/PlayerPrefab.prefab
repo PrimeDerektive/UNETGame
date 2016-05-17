@@ -4075,8 +4075,8 @@ MonoBehaviour:
   fireRate: 0.75
   barrel: {fileID: 483152}
   range: 250
-  shakeAmount: {x: 3, y: 2, z: 2}
-  shakeDuration: 1
+  shakeAmount: {x: 6, y: 3, z: 3}
+  shakeDuration: 1.25
   projectile: {fileID: 0}
   shotSound: {fileID: 8300000, guid: 531e0590bffce5043bd9024e03ea2d78, type: 3}
   muzzleFlash: {fileID: 129012}

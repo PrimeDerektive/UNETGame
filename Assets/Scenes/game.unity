@@ -313,7 +313,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 454094, guid: d96f50f7c28ff4469933406c9f040ef7, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11486792, guid: d96f50f7c28ff4469933406c9f040ef7, type: 2}
       propertyPath: waypoint1

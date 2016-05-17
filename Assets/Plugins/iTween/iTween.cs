@@ -173,7 +173,8 @@ public class iTween : MonoBehaviour{
 		/// <summary>
 		/// The reflection color of the material (used in reflective shaders).
 		/// </summary>
-		_ReflectColor
+		_ReflectColor,
+		_TintColor
 	}
 				
 	#endregion
