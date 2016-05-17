@@ -5,6 +5,8 @@ public class Weapon extends MonoBehaviour{
 	var fireRate : float;
 	var barrel : Transform;
 	var range : float;
+	var shakeAmount : Vector3;
+	var shakeDuration : float;
 	var projectile : GameObject;
 	var shotSound : AudioClip;
 	var muzzleFlash : GameObject;

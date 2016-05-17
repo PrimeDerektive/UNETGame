@@ -89,7 +89,7 @@ public class WeaponController extends NetworkBehaviour{
 		GetComponent.<AudioSource>().PlayOneShot(activeWeapon.shotSound, 1.0);
 
 		//shake the camera
-		CameraShakeManager.instance.Shake(Vector3(1.0, 0.33, 0.33), 0.5, activeWeapon.barrel.position);
+		CameraShakeManager.instance.Shake(activeWeapon.shakeAmount, activeWeapon.shakeDuration, activeWeapon.barrel.position);
 
 		//if the active weapon is a hitscan weapon
 		if(activeWeapon.projectileType == WeaponProjectileType.hitscan){
@@ -97,18 +97,16 @@ public class WeaponController extends NetworkBehaviour{
 			//if the active weapon has a tracer, create it at the barrel coordinates and store a reference to its script
 			if(activeWeapon.tracer){
 				var tracer = GameObject.Instantiate(activeWeapon.tracer, activeWeapon.barrel.position, activeWeapon.barrel.rotation);
-				//cache a reference to the tracer script
-				var tracerScript = tracer.GetComponent.<SimpleBullet>();
 			}
 
 			//cast the hitscan ray
 			var hit : RaycastHit;
 			if(Physics.Raycast(activeWeapon.barrel.position, activeWeapon.barrel.forward, hit, activeWeapon.range, layerMask)){
 				Instantiate(testHitEffect, hit.point, Quaternion.LookRotation(hit.normal));
-				if(tracerScript) tracerScript.dist = hit.distance; //set the lifetime of the tracer
+				if(tracer) tracer.SendMessage("SetDistance", hit.distance); //set the lifetime of the tracer
 			}
 			else{
-				if(tracerScript) tracerScript.dist = activeWeapon.range; //set the lifetime of the tracer
+				if(tracer) tracer.SendMessage("SetDistance", activeWeapon.range); //set the lifetime of the tracer
 			}
 		}
 		else if(activeWeapon.projectileType == WeaponProjectileType.projectile){
