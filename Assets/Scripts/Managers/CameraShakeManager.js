@@ -25,8 +25,8 @@ function Shake(amount : Vector3, duration : float, origin : Vector3){
 	//modify the shake amount exponentially
 	amount *= distanceModifier*distanceModifier;
 
-	//modify the duration linearly
-	duration *= distanceModifier;
+	//modify the duration linearly, but don't allow it to go less than half
+	duration = Mathf.Max(duration*0.5, duration*distanceModifier);
 
 	Debug.Log("Amount: "+ amount +" duration: "+ duration);
 

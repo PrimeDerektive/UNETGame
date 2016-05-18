@@ -16,7 +16,7 @@ public class Rocket extends NetworkBehaviour{
 	function OnTriggerEnter(other : Collider) {
 		if(isServer){
 			if(other.transform.root == creator) return;
-			CameraShakeManager.instance.Shake(Vector3(7.5, 5.0, 5.0), 1.5, transform.position);
+			CameraShakeManager.instance.Shake(Vector3(12, 9.0, 9.0), 2.0, transform.position);
 			Instantiate(explosionPrefab, transform.position, transform.rotation);
 			NetworkServer.Destroy(gameObject);
 		}
