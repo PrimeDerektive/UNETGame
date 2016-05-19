@@ -339,7 +339,8 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11467544, guid: d96f50f7c28ff4469933406c9f040ef7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d96f50f7c28ff4469933406c9f040ef7, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1177196507
@@ -465,6 +466,26 @@ RectTransform:
 GameObject:
   m_PrefabParentObject: {fileID: 166476, guid: d96f50f7c28ff4469933406c9f040ef7, type: 2}
   m_PrefabInternal: {fileID: 1108926550}
+--- !u!114 &1285862393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285862392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 4
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 4
+  m_RotationSyncCompression: 2
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
 --- !u!114 &1285862400
 MonoBehaviour:
   m_ObjectHideFlags: 0
