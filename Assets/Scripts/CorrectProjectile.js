@@ -1,4 +1,5 @@
-﻿#pragma strict
+﻿
+#pragma strict
 
 var correctTarget : Transform;
 var rb : Rigidbody;

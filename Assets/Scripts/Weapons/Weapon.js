@@ -13,9 +13,11 @@ public class Weapon extends MonoBehaviour{
 	var tracer : GameObject;
 
 	function EnableMuzzleFlash() : IEnumerator{
-		muzzleFlash.SetActive(true);
-		yield WaitForSeconds(0.05);
-		muzzleFlash.SetActive(false);
+		if(muzzleFlash){
+			muzzleFlash.SetActive(true);
+			yield WaitForSeconds(0.05);
+			muzzleFlash.SetActive(false);
+		}
 	}
 
 }

@@ -1,0 +1,303 @@
+fileFormatVersion: 2
+guid: 3a7255d93bc60cc44b22cbd4e209e19c
+timeCreated: 1468045115
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Dummy - Cover
+    100002: Dummy - LeftGun
+    100004: Dummy - RightGun
+    100006: Rig
+    100008: RigHead
+    100010: RigHeadGizmo
+    100012: RigLArm1
+    100014: RigLArm1Gizmo
+    100016: RigLArm2
+    100018: RigLArm2Gizmo
+    100020: RigLArmIndex1
+    100022: RigLArmIndex2
+    100024: RigLArmMiddle1
+    100026: RigLArmMiddle2
+    100028: RigLArmPalm
+    100030: RigLArmPalmGizmo
+    100032: RigLArmPinky1
+    100034: RigLArmPinky2
+    100036: RigLLeg1
+    100038: RigLLeg2
+    100040: RigLLegAnkle
+    100042: RigLLegPlatform
+    100044: RigMouth
+    100046: RigMouthGizmo
+    100048: RigNeck1
+    100050: RigNeck2
+    100052: RigPelvis
+    100054: RigPelvisGizmo
+    100056: RigRArm1
+    100058: RigRArm1Gizmo
+    100060: RigRArm2
+    100062: RigRArm2Gizmo
+    100064: RigRArmIndex1
+    100066: RigRArmIndex2
+    100068: RigRArmMiddle1
+    100070: RigRArmMiddle2
+    100072: RigRArmPalm
+    100074: RigRArmPalmGizmo
+    100076: RigRArmPinky1
+    100078: RigRArmPinky2
+    100080: RigRibcage
+    100082: RigRibcageGizmo
+    100084: RigRLeg1
+    100086: RigRLeg2
+    100088: RigRLegAnkle
+    100090: RigRLegPlatform
+    100092: RigSpine1
+    100094: RigSpine2
+    100096: RigSpine3
+    100098: Robot Tanker
+    100100: //RootNode
+    400000: Dummy - Cover
+    400002: Dummy - LeftGun
+    400004: Dummy - RightGun
+    400006: Rig
+    400008: RigHead
+    400010: RigHeadGizmo
+    400012: RigLArm1
+    400014: RigLArm1Gizmo
+    400016: RigLArm2
+    400018: RigLArm2Gizmo
+    400020: RigLArmIndex1
+    400022: RigLArmIndex2
+    400024: RigLArmMiddle1
+    400026: RigLArmMiddle2
+    400028: RigLArmPalm
+    400030: RigLArmPalmGizmo
+    400032: RigLArmPinky1
+    400034: RigLArmPinky2
+    400036: RigLLeg1
+    400038: RigLLeg2
+    400040: RigLLegAnkle
+    400042: RigLLegPlatform
+    400044: RigMouth
+    400046: RigMouthGizmo
+    400048: RigNeck1
+    400050: RigNeck2
+    400052: RigPelvis
+    400054: RigPelvisGizmo
+    400056: RigRArm1
+    400058: RigRArm1Gizmo
+    400060: RigRArm2
+    400062: RigRArm2Gizmo
+    400064: RigRArmIndex1
+    400066: RigRArmIndex2
+    400068: RigRArmMiddle1
+    400070: RigRArmMiddle2
+    400072: RigRArmPalm
+    400074: RigRArmPalmGizmo
+    400076: RigRArmPinky1
+    400078: RigRArmPinky2
+    400080: RigRibcage
+    400082: RigRibcageGizmo
+    400084: RigRLeg1
+    400086: RigRLeg2
+    400088: RigRLegAnkle
+    400090: RigRLegPlatform
+    400092: RigSpine1
+    400094: RigSpine2
+    400096: RigSpine3
+    400098: Robot Tanker
+    400100: //RootNode
+    4300000: Robot Tanker
+    7400000: Run
+    9500000: //RootNode
+    13700000: Robot Tanker
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: RigHeadGizmo
+        weight: 1
+      - path: RigLArm1Gizmo
+        weight: 1
+      - path: RigLArm2Gizmo
+        weight: 1
+      - path: RigLArmPalmGizmo
+        weight: 1
+      - path: RigLLegPlatform
+        weight: 1
+      - path: RigMouthGizmo
+        weight: 1
+      - path: RigPelvis
+        weight: 1
+      - path: RigPelvis/RigLLeg1
+        weight: 1
+      - path: RigPelvis/RigLLeg1/RigLLeg2
+        weight: 1
+      - path: RigPelvis/RigLLeg1/RigLLeg2/RigLLegAnkle
+        weight: 1
+      - path: RigPelvis/RigRLeg1
+        weight: 1
+      - path: RigPelvis/RigRLeg1/RigRLeg2
+        weight: 1
+      - path: RigPelvis/RigRLeg1/RigRLeg2/RigRLegAnkle
+        weight: 1
+      - path: RigPelvis/RigSpine1
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/Dummy - Cover
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/Dummy - LeftGun
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/Dummy - RightGun
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigLArm1
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigLArm1/RigLArm2
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigLArm1/RigLArm2/RigLArmPalm
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigLArm1/RigLArm2/RigLArmPalm/RigLArmIndex1
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigLArm1/RigLArm2/RigLArmPalm/RigLArmIndex1/RigLArmIndex2
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigLArm1/RigLArm2/RigLArmPalm/RigLArmMiddle1
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigLArm1/RigLArm2/RigLArmPalm/RigLArmMiddle1/RigLArmMiddle2
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigLArm1/RigLArm2/RigLArmPalm/RigLArmPinky1
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigLArm1/RigLArm2/RigLArmPalm/RigLArmPinky1/RigLArmPinky2
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigNeck1
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigNeck1/RigNeck2
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigNeck1/RigNeck2/RigHead
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigNeck1/RigNeck2/RigHead/RigMouth
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigRArm1
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigRArm1/RigRArm2
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigRArm1/RigRArm2/RigRArmPalm
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigRArm1/RigRArm2/RigRArmPalm/RigRArmIndex1
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigRArm1/RigRArm2/RigRArmPalm/RigRArmIndex1/RigRArmIndex2
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigRArm1/RigRArm2/RigRArmPalm/RigRArmMiddle1
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigRArm1/RigRArm2/RigRArmPalm/RigRArmMiddle1/RigRArmMiddle2
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigRArm1/RigRArm2/RigRArmPalm/RigRArmPinky1
+        weight: 1
+      - path: RigPelvis/RigSpine1/RigSpine2/RigSpine3/RigRibcage/RigRArm1/RigRArm2/RigRArmPalm/RigRArmPinky1/RigRArmPinky2
+        weight: 1
+      - path: RigPelvisGizmo
+        weight: 1
+      - path: RigRArm1Gizmo
+        weight: 1
+      - path: RigRArm2Gizmo
+        weight: 1
+      - path: RigRArmPalmGizmo
+        weight: 1
+      - path: RigRibcageGizmo
+        weight: 1
+      - path: RigRLegPlatform
+        weight: 1
+      - path: Robot Tanker
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

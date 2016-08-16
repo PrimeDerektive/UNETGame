@@ -42,7 +42,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPoint: {x: 0, y: 0, z: 0}
   endPoint: {x: 0, y: 0, z: 0}
-  lr: {fileID: 0}
+  range: 250
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  lr: {fileID: 12010476}
 --- !u!120 &12010476
 LineRenderer:
   m_ObjectHideFlags: 1

@@ -2,6 +2,10 @@
 
 var startPoint : Vector3 = Vector3.zero;
 var endPoint : Vector3 = Vector3.zero;
+
+var range : float = 250.0;
+var layerMask : LayerMask;
+
 var lr : LineRenderer;
 
 private var timer : float = 0.0;
@@ -12,6 +16,14 @@ function Awake(){
 
 function OnEnable(){
      iTween.FadeTo(gameObject, { "alpha": 0, "time": 1.0, "namedColorValue": "_TintColor" });
+     startPoint = transform.position;
+     var hit : RaycastHit;
+     if(Physics.Raycast(transform.position, transform.forward, hit, range, layerMask)){
+     	endPoint = hit.point;
+     }
+     else{
+     	endPoint = transform.position + transform.forward*range;
+     }
 }
 
 function Update(){
@@ -21,9 +33,4 @@ function Update(){
 		lr.SetPosition(0, startPoint);
 		lr.SetPosition(1, endPoint);
 	}
-}
-
-function SetDistance(distance : float){
-	startPoint = transform.position;
-	endPoint = transform.position + transform.forward * distance;
 }

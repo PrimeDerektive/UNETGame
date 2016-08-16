@@ -139,7 +139,7 @@ ModelImporter:
     400128: Alpha:Spine1
     400130: Alpha:Spine2
     400132: //RootNode
-    7400000: mixamo.com
+    7400000: reloading
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -152,7 +152,10 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'mixamo.com' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'Alpha:Spine2' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
@@ -161,7 +164,169 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: reloading
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Alpha:Hips
+        weight: 1
+      - path: Alpha:Hips/Alpha:LeftUpLeg
+        weight: 1
+      - path: Alpha:Hips/Alpha:LeftUpLeg/Alpha:LeftLeg
+        weight: 1
+      - path: Alpha:Hips/Alpha:LeftUpLeg/Alpha:LeftLeg/Alpha:LeftFoot
+        weight: 1
+      - path: Alpha:Hips/Alpha:LeftUpLeg/Alpha:LeftLeg/Alpha:LeftFoot/Alpha:LeftToeBase
+        weight: 1
+      - path: Alpha:Hips/Alpha:LeftUpLeg/Alpha:LeftLeg/Alpha:LeftFoot/Alpha:LeftToeBase/Alpha:LeftFootToeBase_End
+        weight: 0
+      - path: Alpha:Hips/Alpha:RightUpLeg
+        weight: 1
+      - path: Alpha:Hips/Alpha:RightUpLeg/Alpha:RightLeg
+        weight: 1
+      - path: Alpha:Hips/Alpha:RightUpLeg/Alpha:RightLeg/Alpha:RightFoot
+        weight: 1
+      - path: Alpha:Hips/Alpha:RightUpLeg/Alpha:RightLeg/Alpha:RightFoot/Alpha:RightToeBase
+        weight: 1
+      - path: Alpha:Hips/Alpha:RightUpLeg/Alpha:RightLeg/Alpha:RightFoot/Alpha:RightToeBase/Alpha:RightFootToeBase_End
+        weight: 0
+      - path: Alpha:Hips/Alpha:Spine
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandIndex1
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandIndex1/Alpha:LeftHandIndex2
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandIndex1/Alpha:LeftHandIndex2/Alpha:LeftHandIndex3
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandIndex1/Alpha:LeftHandIndex2/Alpha:LeftHandIndex3/Alpha:LeftHandIndex4
+        weight: 0
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandMiddle1
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandMiddle1/Alpha:LeftHandMiddle2
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandMiddle1/Alpha:LeftHandMiddle2/Alpha:LeftHandMiddle3
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandMiddle1/Alpha:LeftHandMiddle2/Alpha:LeftHandMiddle3/Alpha:LeftHandMiddle4
+        weight: 0
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandPinky1
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandPinky1/Alpha:LeftHandPinky2
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandPinky1/Alpha:LeftHandPinky2/Alpha:LeftHandPinky3
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandPinky1/Alpha:LeftHandPinky2/Alpha:LeftHandPinky3/Alpha:LeftHandPinky4
+        weight: 0
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandRing1
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandRing1/Alpha:LeftHandRing2
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandRing1/Alpha:LeftHandRing2/Alpha:LeftHandRing3
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandRing1/Alpha:LeftHandRing2/Alpha:LeftHandRing3/Alpha:LeftHandRing4
+        weight: 0
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandThumb1
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandThumb1/Alpha:LeftHandThumb2
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandThumb1/Alpha:LeftHandThumb2/Alpha:LeftHandThumb3
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:LeftShoulder/Alpha:LeftArm/Alpha:LeftForeArm/Alpha:LeftHand/Alpha:LeftHandThumb1/Alpha:LeftHandThumb2/Alpha:LeftHandThumb3/Alpha:LeftHandThumb4
+        weight: 0
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:Neck
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:Neck/Alpha:Neck1
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:Neck/Alpha:Neck1/Alpha:Head
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:Neck/Alpha:Neck1/Alpha:Head/Alpha:HeadTop_End
+        weight: 0
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandIndex1
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandIndex1/Alpha:RightHandIndex2
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandIndex1/Alpha:RightHandIndex2/Alpha:RightHandIndex3
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandIndex1/Alpha:RightHandIndex2/Alpha:RightHandIndex3/Alpha:RightHandIndex4
+        weight: 0
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandMiddle1
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandMiddle1/Alpha:RightHandMiddle2
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandMiddle1/Alpha:RightHandMiddle2/Alpha:RightHandMiddle3
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandMiddle1/Alpha:RightHandMiddle2/Alpha:RightHandMiddle3/Alpha:RightHandMiddle4
+        weight: 0
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandPinky1
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandPinky1/Alpha:RightHandPinky2
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandPinky1/Alpha:RightHandPinky2/Alpha:RightHandPinky3
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandPinky1/Alpha:RightHandPinky2/Alpha:RightHandPinky3/Alpha:RightHandPinky4
+        weight: 0
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandRing1
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandRing1/Alpha:RightHandRing2
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandRing1/Alpha:RightHandRing2/Alpha:RightHandRing3
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandRing1/Alpha:RightHandRing2/Alpha:RightHandRing3/Alpha:RightHandRing4
+        weight: 0
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandThumb1
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandThumb1/Alpha:RightHandThumb2
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandThumb1/Alpha:RightHandThumb2/Alpha:RightHandThumb3
+        weight: 1
+      - path: Alpha:Hips/Alpha:Spine/Alpha:Spine1/Alpha:Spine2/Alpha:RightShoulder/Alpha:RightArm/Alpha:RightForeArm/Alpha:RightHand/Alpha:RightHandThumb1/Alpha:RightHandThumb2/Alpha:RightHandThumb3/Alpha:RightHandThumb4
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

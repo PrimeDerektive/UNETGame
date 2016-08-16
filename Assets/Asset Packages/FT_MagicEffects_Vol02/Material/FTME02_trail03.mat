@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FTME02_trail03
+  m_Shader: {fileID: 4800000, guid: 970eb6c56642fd446b9ff6b97509ae3f, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Texture
+        second:
+          m_Texture: {fileID: 2800000, guid: 37cf190e9166d414fba2e862a0aa0c8f, type: 3}
+          m_Scale: {x: 0.5, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: 0.5
+      data:
+        first:
+          name: _Emission
+        second: 4
+      data:
+        first:
+          name: _X_speed
+        second: 0
+      data:
+        first:
+          name: _Y_speed
+        second: 0
+      data:
+        first:
+          name: _Use_Fresnel
+        second: 0
+      data:
+        first:
+          name: _Fresnel_Strength
+        second: 5
+      data:
+        first:
+          name: _SoftParticle_Value
+        second: 0
+      data:
+        first:
+          name: _Use_SoftPaticle
+        second: 0
+      data:
+        first:
+          name: _node_6241
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0.9068966, g: 0.9068966, b: 0.9068966, a: 1}

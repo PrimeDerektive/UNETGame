@@ -6,6 +6,7 @@ var dampTime : float = 0.2;
 private var velocity : Vector3; 
 private var anim : Animator;
 private var lastPos : Vector3 = Vector3.zero;
+private var lastForward : Vector3 = Vector3.zero;
 
 function Start () {
 	anim = GetComponent.<Animator>();
@@ -18,8 +19,15 @@ function FixedUpdate(){
 	//convert to local space
 	velocity = transform.InverseTransformDirection(velocity);
 
+	//get angle between last forward and current forward
+	var direction : float = Utilities.FindTurningAngle(transform.forward, lastForward);
+	//set the direction in the animator
+	anim.SetFloat("direction", direction);
+
 	//cache the last frame's position	
 	lastPos = transform.position;
+	//cache last frames forward
+	lastForward = transform.forward;
 
 }
 

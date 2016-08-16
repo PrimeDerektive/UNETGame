@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FTME02_weponShuriken
+  m_Shader: {fileID: 4800000, guid: 7f267c351d3cd7842bbab6ff0bbc1120, type: 3}
+  m_ShaderKeywords: _USE_FRESNEL_ON
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Texture
+        second:
+          m_Texture: {fileID: 2800000, guid: 185d1d112d0f52642b9ff3a89051c9f5, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: 0.5
+      data:
+        first:
+          name: _Emission
+        second: 1
+      data:
+        first:
+          name: _Use_Fresnel
+        second: 1
+      data:
+        first:
+          name: _SoftParticle_Value
+        second: 0
+      data:
+        first:
+          name: _Fresnel_Emission
+        second: 8
+      data:
+        first:
+          name: _Fresnel_Range
+        second: 2
+      data:
+        first:
+          name: _Use_SoftPaticle
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0.99999994, g: 0.12499999, b: 0.12499999, a: 1}
+      data:
+        first:
+          name: _FresnelColor
+        second: {r: 0.99999994, g: 0.6485726, b: 0.08088236, a: 1}

@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: 6c4fd96519d7a404788962ce1c7d3e57
+timeCreated: 1468046058
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Dummy - Cover
+    100002: Dummy - LeftGun
+    100004: Dummy - RightGun
+    100006: Rig
+    100008: RigHead
+    100010: RigHeadGizmo
+    100012: RigLArm1
+    100014: RigLArm1Gizmo
+    100016: RigLArm2
+    100018: RigLArm2Gizmo
+    100020: RigLArmIndex1
+    100022: RigLArmIndex2
+    100024: RigLArmMiddle1
+    100026: RigLArmMiddle2
+    100028: RigLArmPalm
+    100030: RigLArmPalmGizmo
+    100032: RigLArmPinky1
+    100034: RigLArmPinky2
+    100036: RigLLeg1
+    100038: RigLLeg2
+    100040: RigLLegAnkle
+    100042: RigLLegPlatform
+    100044: RigMouth
+    100046: RigMouthGizmo
+    100048: RigNeck1
+    100050: RigNeck2
+    100052: RigPelvis
+    100054: RigPelvisGizmo
+    100056: RigRArm1
+    100058: RigRArm1Gizmo
+    100060: RigRArm2
+    100062: RigRArm2Gizmo
+    100064: RigRArmIndex1
+    100066: RigRArmIndex2
+    100068: RigRArmMiddle1
+    100070: RigRArmMiddle2
+    100072: RigRArmPalm
+    100074: RigRArmPalmGizmo
+    100076: RigRArmPinky1
+    100078: RigRArmPinky2
+    100080: RigRibcage
+    100082: RigRibcageGizmo
+    100084: RigRLeg1
+    100086: RigRLeg2
+    100088: RigRLegAnkle
+    100090: RigRLegPlatform
+    100092: RigSpine1
+    100094: RigSpine2
+    100096: RigSpine3
+    100098: Robot Tanker
+    100100: //RootNode
+    400000: Dummy - Cover
+    400002: Dummy - LeftGun
+    400004: Dummy - RightGun
+    400006: Rig
+    400008: RigHead
+    400010: RigHeadGizmo
+    400012: RigLArm1
+    400014: RigLArm1Gizmo
+    400016: RigLArm2
+    400018: RigLArm2Gizmo
+    400020: RigLArmIndex1
+    400022: RigLArmIndex2
+    400024: RigLArmMiddle1
+    400026: RigLArmMiddle2
+    400028: RigLArmPalm
+    400030: RigLArmPalmGizmo
+    400032: RigLArmPinky1
+    400034: RigLArmPinky2
+    400036: RigLLeg1
+    400038: RigLLeg2
+    400040: RigLLegAnkle
+    400042: RigLLegPlatform
+    400044: RigMouth
+    400046: RigMouthGizmo
+    400048: RigNeck1
+    400050: RigNeck2
+    400052: RigPelvis
+    400054: RigPelvisGizmo
+    400056: RigRArm1
+    400058: RigRArm1Gizmo
+    400060: RigRArm2
+    400062: RigRArm2Gizmo
+    400064: RigRArmIndex1
+    400066: RigRArmIndex2
+    400068: RigRArmMiddle1
+    400070: RigRArmMiddle2
+    400072: RigRArmPalm
+    400074: RigRArmPalmGizmo
+    400076: RigRArmPinky1
+    400078: RigRArmPinky2
+    400080: RigRibcage
+    400082: RigRibcageGizmo
+    400084: RigRLeg1
+    400086: RigRLeg2
+    400088: RigRLegAnkle
+    400090: RigRLegPlatform
+    400092: RigSpine1
+    400094: RigSpine2
+    400096: RigSpine3
+    400098: Robot Tanker
+    400100: //RootNode
+    4300000: Robot Tanker
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Robot Tanker
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

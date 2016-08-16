@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FTME02_aura02
+  m_Shader: {fileID: 4800000, guid: 9f106b148150f834bb722091ef4f7195, type: 3}
+  m_ShaderKeywords: _USE_SOFTPATICLE_ON
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Texture
+        second:
+          m_Texture: {fileID: 2800000, guid: ddff5b2790d6cf4488592e54f3845cdf, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Mask
+        second:
+          m_Texture: {fileID: 2800000, guid: 594bbd825bf6d2749838e938d8521a34, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_3875
+        second:
+          m_Texture: {fileID: 2800000, guid: 594bbd825bf6d2749838e938d8521a34, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: 0.5
+      data:
+        first:
+          name: _Emission
+        second: 5
+      data:
+        first:
+          name: _SoftParticle_Value
+        second: 1
+      data:
+        first:
+          name: _Use_SoftPaticle
+        second: 1
+      data:
+        first:
+          name: _Distortion_Strength
+        second: 0.01607143
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0.99999994, g: 0.99999994, b: 0.99999994, a: 1}

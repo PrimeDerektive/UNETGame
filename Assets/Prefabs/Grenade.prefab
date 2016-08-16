@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a05e874da3e744deb662bb6cc75250e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 5
+  lifeTime: 2.5
   explosionPrefab: {fileID: 133966, guid: d2c4ad4ebc7d4b94f98b8889de1d1bfa, type: 2}
 --- !u!136 &13634318
 CapsuleCollider:
