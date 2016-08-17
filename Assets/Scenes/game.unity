@@ -484,7 +484,7 @@ GameObject:
   - 114: {fileID: 546039518}
   - 114: {fileID: 546039521}
   - 143: {fileID: 546039522}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Robot Tanker - Yellow
   m_TagString: Robot
   m_Icon: {fileID: 0}
