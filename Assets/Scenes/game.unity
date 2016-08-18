@@ -484,6 +484,10 @@ GameObject:
   - 114: {fileID: 546039518}
   - 114: {fileID: 546039521}
   - 143: {fileID: 546039522}
+  - 114: {fileID: 546039525}
+  - 114: {fileID: 546039524}
+  - 114: {fileID: 546039523}
+  - 114: {fileID: 546039517}
   m_Layer: 11
   m_Name: Robot Tanker - Yellow
   m_TagString: Robot
@@ -523,6 +527,18 @@ Transform:
   - {fileID: 1513553222}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &546039517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546039514}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbdcd76c6c1e3a54b9b40fe62b940735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  findTargetInterval: 0.5
 --- !u!114 &546039518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,6 +638,79 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1.5, z: 0}
+--- !u!114 &546039523
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546039514}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a0cc5707275f48df964dd41b96a1a92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Blackboard: {fileID: 546039525}
+  m_Parent: {fileID: 546039524}
+  m_StateName: Idle
+  m_Color: 0
+  m_HideScript: 1
+  m_Position: {x: 100, y: 20}
+  m_Transitions: []
+  m_CachedInstanceID: -12596
+  m_Target: {fileID: 546039514}
+  m_MonoBehaviour: {fileID: 546039517}
+--- !u!114 &546039524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546039514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a27b962ddfa21461eb78fac1cb2f955f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Blackboard: {fileID: 546039525}
+  m_Parent: {fileID: 0}
+  m_StateName: StateMachine
+  m_Color: 0
+  m_HideScript: 1
+  m_Position: {x: 0, y: 0}
+  m_Transitions: []
+  m_CachedInstanceID: -11538
+  m_Description: 
+  m_EnabledState: {fileID: 0}
+  m_LastEnabledState: {fileID: 0}
+  m_StartState: {fileID: 546039523}
+  m_AnyState: {fileID: 0}
+  m_ConcurrentState: {fileID: 0}
+--- !u!114 &546039525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546039514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634db10235c0241d6ad43433a106016d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FloatVars: []
+  m_IntVars: []
+  m_BoolVars: []
+  m_StringVars: []
+  m_Vector3Vars: []
+  m_RectVars: []
+  m_ColorVars: []
+  m_QuaternionVars: []
+  m_GameObjectVars: []
+  m_TextureVars: []
+  m_MaterialVars: []
+  m_ObjectVars: []
+  m_DynamicLists: []
+  m_FsmEvents: []
+  m_ConcreteFsmEvents: []
+  m_Namespace: 
 --- !u!1 &565474305
 GameObject:
   m_ObjectHideFlags: 0
