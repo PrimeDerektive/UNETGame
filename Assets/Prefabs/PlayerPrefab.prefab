@@ -2887,7 +2887,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 149158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9972041, y: -2, z: 2.4358735}
+  m_LocalPosition: {x: 18.6647, y: -2, z: -19.050797}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -4598,7 +4598,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 250
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -4670,9 +4670,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 250
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -5656,7 +5656,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 1536
-  hitEffectRobot: {fileID: 100002, guid: e05640b713279be4ea35ced053857820, type: 2}
+  hitEffectRobot: {fileID: 178398, guid: b1c4e0ef11df10f4f9263157680fd697, type: 2}
   hitEffectLevel: {fileID: 150652, guid: 22e9e141fb96abc478c55b5737264e1f, type: 2}
 --- !u!114 &11446966
 MonoBehaviour:

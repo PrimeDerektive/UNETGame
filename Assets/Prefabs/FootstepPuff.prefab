@@ -39,7 +39,7 @@ ParticleSystem:
   serializedVersion: 2
   lengthInSec: 0.6
   startDelay:
-    scalar: 0.1
+    scalar: 0
     maxCurve:
       serializedVersion: 2
       m_Curve:

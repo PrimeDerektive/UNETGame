@@ -20,7 +20,7 @@ public class Weapon_HitscanWeapon extends Weapon_Base{
 
 		//play the shot sound
 		audioSource.pitch = Random.Range(0.85, 1.0);
-		audioSource.PlayOneShot(fireSound, 1.0);
+		audioSource.PlayOneShot(fireSound, 0.5);
 
 		//shake the camera
 		CameraShakeManager.instance.Shake(shakeAmount, shakeDuration, barrel.position);
@@ -29,6 +29,7 @@ public class Weapon_HitscanWeapon extends Weapon_Base{
 		var hit : RaycastHit;
 		if(Physics.Raycast(barrel.position, barrel.forward, hit, range, layerMask)){
 			if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Hitbox")){
+				hit.collider.gameObject.SendMessageUpwards("TakeDamage", 5.0, SendMessageOptions.DontRequireReceiver);
 				Instantiate(hitEffectRobot, hit.point, Quaternion.LookRotation(hit.normal));
 			}
 			else{

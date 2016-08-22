@@ -43,6 +43,10 @@ public class AIState_Idle extends NetworkBehaviour{
 
 	}
 
+	function OnDisable(){
+		CancelInvoke();
+	}
+
 	//called on the server, executed on clients
 	@ClientRpc
 	function RpcSetTarget(newTargetNetId : NetworkInstanceId){

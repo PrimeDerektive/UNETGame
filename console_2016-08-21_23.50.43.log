@@ -1,0 +1,152 @@
+3
+	UnityEngine.Debug:Log(Object)
+	PlayerNetworkInit:OnStartLocalPlayer() (at Assets/Scripts/PlayerNetworkInit.js:24)
+	UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate()
+
+Look rotation viewing vector is zero
+	UnityEngine.Transform:set_forward(Vector3)
+	AimTargetController:LateUpdate() (at Assets/Scripts/AimTargetController.js:48)
+
+Now we're in the seeking target state.
+	UnityEngine.Debug:Log(Object)
+	AIState_SeekingTarget:OnEnable() (at Assets/Scripts/AI/States/AIState_SeekingTarget.js:26)
+	UnityEngine.Behaviour:set_enabled(Boolean)
+	BehaviourMachine.InternalMonoState:OnEnable() (at Assets/Plugins/BehaviourMachine/Source/States/InternalMonoState.cs:65)
+	UnityEngine.Behaviour:set_enabled(Boolean)
+	BehaviourMachine.ParentBehaviour:EnableState(InternalStateBehaviour) (at Assets/Plugins/BehaviourMachine/Source/States/ParentBehaviour.cs:60)
+	BehaviourMachine.InternalStateBehaviour:set_enabled(Boolean) (at Assets/Plugins/BehaviourMachine/Source/States/InternalStateBehaviour.cs:206)
+	BehaviourMachine.InternalStateBehaviour:ProcessEvent(Int32) (at Assets/Plugins/BehaviourMachine/Source/States/InternalStateBehaviour.cs:330)
+	BehaviourMachine.InternalStateMachine:ProcessEvent(Int32) (at Assets/Plugins/BehaviourMachine/Source/States/InternalStateMachine.cs:156)
+	BehaviourMachine.InternalStateBehaviour:SendEvent(Int32) (at Assets/Plugins/BehaviourMachine/Source/States/InternalStateBehaviour.cs:299)
+	BehaviourMachine.InternalBlackboard:SendEvent(Int32) (at Assets/Plugins/BehaviourMachine/Source/Blackboard/InternalBlackboard.cs:961)
+	BehaviourMachine.InternalBlackboard:SendEvent(String) (at Assets/Plugins/BehaviourMachine/Source/Blackboard/InternalBlackboard.cs:942)
+	AIState_Idle:FindTarget() (at Assets/Scripts/AI/States/AIState_Idle.js:41)
+
+Amount: (0.5, 0.2, 0.2) duration: 0.4464002
+	UnityEngine.Debug:Log(Object)
+	CameraShakeManager:Shake(Vector3, Single, Vector3) (at Assets/Scripts/Managers/CameraShakeManager.js:31)
+	Weapon_HitscanWeapon:Fire() (at Assets/Scripts/Weapons/Weapon_HitscanWeapon.js:26)
+	$:MoveNext() (at Assets/Scripts/Weapons/WeaponController.js:116)
+
+Amount: (0.5, 0.2, 0.2) duration: 0.4466954
+	UnityEngine.Debug:Log(Object)
+	CameraShakeManager:Shake(Vector3, Single, Vector3) (at Assets/Scripts/Managers/CameraShakeManager.js:31)
+	Weapon_HitscanWeapon:Fire() (at Assets/Scripts/Weapons/Weapon_HitscanWeapon.js:26)
+	$:MoveNext() (at Assets/Scripts/Weapons/WeaponController.js:116)
+
+Amount: (0.5, 0.2, 0.2) duration: 0.4467266
+	UnityEngine.Debug:Log(Object)
+	CameraShakeManager:Shake(Vector3, Single, Vector3) (at Assets/Scripts/Managers/CameraShakeManager.js:31)
+	Weapon_HitscanWeapon:Fire() (at Assets/Scripts/Weapons/Weapon_HitscanWeapon.js:26)
+	$:MoveNext() (at Assets/Scripts/Weapons/WeaponController.js:116)
+
+Amount: (0.5, 0.2, 0.2) duration: 0.4466702
+	UnityEngine.Debug:Log(Object)
+	CameraShakeManager:Shake(Vector3, Single, Vector3) (at Assets/Scripts/Managers/CameraShakeManager.js:31)
+	Weapon_HitscanWeapon:Fire() (at Assets/Scripts/Weapons/Weapon_HitscanWeapon.js:26)
+	$:MoveNext() (at Assets/Scripts/Weapons/WeaponController.js:116)
+
+0.865876
+	UnityEngine.Debug:Log(Object)
+	AIState_SeekingTarget:RangedCheck() (at Assets/Scripts/AI/States/AIState_SeekingTarget.js:50)
+
+Amount: (0.5, 0.2, 0.2) duration: 0.447352
+	UnityEngine.Debug:Log(Object)
+	CameraShakeManager:Shake(Vector3, Single, Vector3) (at Assets/Scripts/Managers/CameraShakeManager.js:31)
+	Weapon_HitscanWeapon:Fire() (at Assets/Scripts/Weapons/Weapon_HitscanWeapon.js:26)
+	$:MoveNext() (at Assets/Scripts/Weapons/WeaponController.js:116)
+
+0.2191761
+	UnityEngine.Debug:Log(Object)
+	AIState_SeekingTarget:RangedCheck() (at Assets/Scripts/AI/States/AIState_SeekingTarget.js:50)
+
+Now we're in the ranged attack state.
+	UnityEngine.Debug:Log(Object)
+	AIState_RangedAttack:OnEnable() (at Assets/Scripts/AI/States/AIState_RangedAttack.js:30)
+	UnityEngine.Behaviour:set_enabled(Boolean)
+	BehaviourMachine.InternalMonoState:OnEnable() (at Assets/Plugins/BehaviourMachine/Source/States/InternalMonoState.cs:65)
+	UnityEngine.Behaviour:set_enabled(Boolean)
+	BehaviourMachine.ParentBehaviour:EnableState(InternalStateBehaviour) (at Assets/Plugins/BehaviourMachine/Source/States/ParentBehaviour.cs:60)
+	BehaviourMachine.InternalStateBehaviour:set_enabled(Boolean) (at Assets/Plugins/BehaviourMachine/Source/States/InternalStateBehaviour.cs:206)
+	BehaviourMachine.InternalStateBehaviour:ProcessEvent(Int32) (at Assets/Plugins/BehaviourMachine/Source/States/InternalStateBehaviour.cs:330)
+	BehaviourMachine.InternalStateMachine:ProcessEvent(Int32) (at Assets/Plugins/BehaviourMachine/Source/States/InternalStateMachine.cs:156)
+	BehaviourMachine.InternalStateBehaviour:SendEvent(Int32) (at Assets/Plugins/BehaviourMachine/Source/States/InternalStateBehaviour.cs:299)
+	BehaviourMachine.InternalBlackboard:SendEvent(Int32) (at Assets/Plugins/BehaviourMachine/Source/Blackboard/InternalBlackboard.cs:961)
+	BehaviourMachine.InternalBlackboard:SendEvent(String) (at Assets/Plugins/BehaviourMachine/Source/Blackboard/InternalBlackboard.cs:942)
+	AIState_SeekingTarget:RangedCheck() (at Assets/Scripts/AI/States/AIState_SeekingTarget.js:52)
+
+Amount: (0.5, 0.2, 0.2) duration: 0.450316
+	UnityEngine.Debug:Log(Object)
+	CameraShakeManager:Shake(Vector3, Single, Vector3) (at Assets/Scripts/Managers/CameraShakeManager.js:31)
+	Weapon_HitscanWeapon:Fire() (at Assets/Scripts/Weapons/Weapon_HitscanWeapon.js:26)
+	$:MoveNext() (at Assets/Scripts/Weapons/WeaponController.js:116)
+
+Amount: (0.5, 0.2, 0.2) duration: 0.450219
+	UnityEngine.Debug:Log(Object)
+	CameraShakeManager:Shake(Vector3, Single, Vector3) (at Assets/Scripts/Managers/CameraShakeManager.js:31)
+	Weapon_HitscanWeapon:Fire() (at Assets/Scripts/Weapons/Weapon_HitscanWeapon.js:26)
+	$:MoveNext() (at Assets/Scripts/Weapons/WeaponController.js:116)
+
+Amount: (0.5, 0.2, 0.2) duration: 0.4499723
+	UnityEngine.Debug:Log(Object)
+	CameraShakeManager:Shake(Vector3, Single, Vector3) (at Assets/Scripts/Managers/CameraShakeManager.js:31)
+	Weapon_HitscanWeapon:Fire() (at Assets/Scripts/Weapons/Weapon_HitscanWeapon.js:26)
+	$:MoveNext() (at Assets/Scripts/Weapons/WeaponController.js:116)
+
+Now we're in the seeking target state.
+	UnityEngine.Debug:Log(Object)
+	AIState_SeekingTarget:OnEnable() (at Assets/Scripts/AI/States/AIState_SeekingTarget.js:26)
+	UnityEngine.Behaviour:set_enabled(Boolean)
+	BehaviourMachine.InternalMonoState:OnEnable() (at Assets/Plugins/BehaviourMachine/Source/States/InternalMonoState.cs:65)
+	UnityEngine.Behaviour:set_enabled(Boolean)
+	BehaviourMachine.ParentBehaviour:EnableState(InternalStateBehaviour) (at Assets/Plugins/BehaviourMachine/Source/States/ParentBehaviour.cs:60)
+	BehaviourMachine.InternalStateBehaviour:set_enabled(Boolean) (at Assets/Plugins/BehaviourMachine/Source/States/InternalStateBehaviour.cs:206)
+	BehaviourMachine.InternalStateBehaviour:ProcessEvent(Int32) (at Assets/Plugins/BehaviourMachine/Source/States/InternalStateBehaviour.cs:330)
+	BehaviourMachine.InternalStateMachine:ProcessEvent(Int32) (at Assets/Plugins/BehaviourMachine/Source/States/InternalStateMachine.cs:156)
+	BehaviourMachine.InternalStateBehaviour:SendEvent(Int32) (at Assets/Plugins/BehaviourMachine/Source/States/InternalStateBehaviour.cs:299)
+	BehaviourMachine.InternalBlackboard:SendEvent(Int32) (at Assets/Plugins/BehaviourMachine/Source/Blackboard/InternalBlackboard.cs:961)
+	BehaviourMachine.InternalBlackboard:SendEvent(String) (at Assets/Plugins/BehaviourMachine/Source/Blackboard/InternalBlackboard.cs:942)
+	AIState_RangedAttack:EndRangedAttack() (at Assets/Scripts/AI/States/AIState_RangedAttack.js:85)
+
+Amount: (0.5, 0.2, 0.2) duration: 0.4500851
+	UnityEngine.Debug:Log(Object)
+	CameraShakeManager:Shake(Vector3, Single, Vector3) (at Assets/Scripts/Managers/CameraShakeManager.js:31)
+	Weapon_HitscanWeapon:Fire() (at Assets/Scripts/Weapons/Weapon_HitscanWeapon.js:26)
+	$:MoveNext() (at Assets/Scripts/Weapons/WeaponController.js:116)
+
+Amount: (0.5, 0.2, 0.2) duration: 0.4481266
+	UnityEngine.Debug:Log(Object)
+	CameraShakeManager:Shake(Vector3, Single, Vector3) (at Assets/Scripts/Managers/CameraShakeManager.js:31)
+	Weapon_HitscanWeapon:Fire() (at Assets/Scripts/Weapons/Weapon_HitscanWeapon.js:26)
+	$:MoveNext() (at Assets/Scripts/Weapons/WeaponController.js:116)
+
+Amount: (0.5, 0.2, 0.2) duration: 0.4486667
+	UnityEngine.Debug:Log(Object)
+	CameraShakeManager:Shake(Vector3, Single, Vector3) (at Assets/Scripts/Managers/CameraShakeManager.js:31)
+	Weapon_HitscanWeapon:Fire() (at Assets/Scripts/Weapons/Weapon_HitscanWeapon.js:26)
+	$:MoveNext() (at Assets/Scripts/Weapons/WeaponController.js:116)
+
+Amount: (0.5, 0.2, 0.2) duration: 0.4477831
+	UnityEngine.Debug:Log(Object)
+	CameraShakeManager:Shake(Vector3, Single, Vector3) (at Assets/Scripts/Managers/CameraShakeManager.js:31)
+	Weapon_HitscanWeapon:Fire() (at Assets/Scripts/Weapons/Weapon_HitscanWeapon.js:26)
+	$:MoveNext() (at Assets/Scripts/Weapons/WeaponController.js:116)
+
+Amount: (0.5, 0.2, 0.2) duration: 0.4483729
+	UnityEngine.Debug:Log(Object)
+	CameraShakeManager:Shake(Vector3, Single, Vector3) (at Assets/Scripts/Managers/CameraShakeManager.js:31)
+	Weapon_HitscanWeapon:Fire() (at Assets/Scripts/Weapons/Weapon_HitscanWeapon.js:26)
+	$:MoveNext() (at Assets/Scripts/Weapons/WeaponController.js:116)
+
+Amount: (0.5, 0.2, 0.2) duration: 0.4466575
+	UnityEngine.Debug:Log(Object)
+	CameraShakeManager:Shake(Vector3, Single, Vector3) (at Assets/Scripts/Managers/CameraShakeManager.js:31)
+	Weapon_HitscanWeapon:Fire() (at Assets/Scripts/Weapons/Weapon_HitscanWeapon.js:26)
+	$:MoveNext() (at Assets/Scripts/Weapons/WeaponController.js:116)
+
+Amount: (0.5, 0.2, 0.2) duration: 0.4428762
+	UnityEngine.Debug:Log(Object)
+	CameraShakeManager:Shake(Vector3, Single, Vector3) (at Assets/Scripts/Managers/CameraShakeManager.js:31)
+	Weapon_HitscanWeapon:Fire() (at Assets/Scripts/Weapons/Weapon_HitscanWeapon.js:26)
+	$:MoveNext() (at Assets/Scripts/Weapons/WeaponController.js:116)
+

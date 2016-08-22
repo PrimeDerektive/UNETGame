@@ -16,13 +16,17 @@ function Start(){
 function FootstepLeft(){
 	audioSource.pitch = Random.Range(0.75, 1.0);
 	audioSource.PlayOneShot(footstepClip, 0.5);
-	var newFootPuff = Instantiate(footstepEffect, leftFoot.position, Quaternion.identity);
-	newFootPuff.transform.forward = Vector3.up;
+	StartCoroutine(CreateFootstepEffect(leftFoot.position));
 }
 
 function FootstepRight(){
 	audioSource.pitch = Random.Range(0.75, 1.0);
 	audioSource.PlayOneShot(footstepClip, 0.5);
-	var newFootPuff = Instantiate(footstepEffect, rightFoot.position, Quaternion.identity);
+	StartCoroutine(CreateFootstepEffect(rightFoot.position));
+}
+
+function CreateFootstepEffect(pos : Vector3){
+	yield WaitForSeconds(0.05);
+	var newFootPuff = Instantiate(footstepEffect, pos, Quaternion.identity);
 	newFootPuff.transform.forward = Vector3.up;
 }
