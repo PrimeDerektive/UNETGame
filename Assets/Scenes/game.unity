@@ -2479,6 +2479,7 @@ GameObject:
   - 114: {fileID: 546039532}
   - 114: {fileID: 546039533}
   - 114: {fileID: 546039534}
+  - 114: {fileID: 546039535}
   m_Layer: 11
   m_Name: RobotTanker
   m_TagString: Robot
@@ -2539,7 +2540,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 546039527}
     m_EventID: 1932563989
-  m_CachedInstanceID: 215600
+  m_CachedInstanceID: 90070
   m_Target: {fileID: 546039514}
   m_MonoBehaviour: {fileID: 546039516}
 --- !u!114 &546039518
@@ -2684,7 +2685,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 215614
+  m_CachedInstanceID: 90084
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -2784,7 +2785,7 @@ MonoBehaviour:
     m_EventID: 173484231
   - m_Destination: {fileID: 546039532}
     m_EventID: 507425973
-  m_CachedInstanceID: 215620
+  m_CachedInstanceID: 90090
   m_Target: {fileID: 546039514}
   m_MonoBehaviour: {fileID: 546039515}
 --- !u!114 &546039528
@@ -2807,7 +2808,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 546039527}
     m_EventID: 29980150
-  m_CachedInstanceID: 215622
+  m_CachedInstanceID: 90092
   m_Target: {fileID: 546039514}
   m_MonoBehaviour: {fileID: 546039518}
 --- !u!114 &546039529
@@ -2942,7 +2943,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 546039527}
     m_EventID: -10
-  m_CachedInstanceID: 215630
+  m_CachedInstanceID: 90100
   m_Target: {fileID: 546039514}
   m_MonoBehaviour: {fileID: 546039531}
 --- !u!114 &546039533
@@ -2994,6 +2995,20 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!114 &546039535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546039514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3ed01d85e4af449aae0a26159c7bf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetNetId: 0
+  blackboard: {fileID: 0}
+  lastTarget: {fileID: 0}
 --- !u!1 &579239187
 GameObject:
   m_ObjectHideFlags: 0
