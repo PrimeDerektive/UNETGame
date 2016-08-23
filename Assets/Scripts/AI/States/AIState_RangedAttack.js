@@ -4,6 +4,8 @@ import BehaviourMachine;
 
 public class AIState_RangedAttack extends NetworkBehaviour{
 
+	var minDuration : float = 3.0;
+	var maxDuration : float = 6.0;
 	var rotSpeed : float = 4.0;
 	var attackAngle : float = 45.0;
 	var barrel1 : Transform;
@@ -29,7 +31,12 @@ public class AIState_RangedAttack extends NetworkBehaviour{
 	function OnEnable(){
 		Debug.Log("Now we're in the ranged attack state.");
 		audioSource.PlayOneShot(startAttackSound, 1.0);
-		Invoke("EndRangedAttack", Random.Range(3.0, 6.0));
+
+		if(isServer){
+			//Invoke EndRangedAttack with new end time
+			Invoke("EndRangedAttack", Random.Range(minDuration, maxDuration));
+		}
+
 	}
 
 	function Update(){
@@ -82,7 +89,7 @@ public class AIState_RangedAttack extends NetworkBehaviour{
 	}
 
 	function EndRangedAttack(){
-		blackboard.SendEvent("FINISHED");
+		BroadcastMessage("TransitionEvent", "GoToSeekingTarget");
 	}	
 
 	function OnDisable(){

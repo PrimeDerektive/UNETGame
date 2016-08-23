@@ -6,7 +6,6 @@ public class AIState_MeleeAttack extends NetworkBehaviour{
 
 	var rotSpeed : float = 4.0;
 	var attackAngle : float = 30.0;
-	var outOfRangeDistance : float = 5.0;
 	var target : GameObjectVar;
 
 	//component references
@@ -39,12 +38,6 @@ public class AIState_MeleeAttack extends NetworkBehaviour{
 		if(currentAnimState.IsName("Idle") && angleDifference <= attackAngle){
 			anim.SetTrigger("Melee Attack 01");
 		}
-
-		//check if the target moved too far away for us to attack
-		if(currentAnimState.IsName("Idle") && Vector3.Distance(transform.position, targetPos) > outOfRangeDistance){
-			blackboard.SendEvent("OutOfMeleeRange");
-		} 
-
 
 	}
 

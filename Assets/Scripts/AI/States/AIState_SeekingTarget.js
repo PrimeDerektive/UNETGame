@@ -34,12 +34,6 @@ public class AIState_SeekingTarget extends NetworkBehaviour{
 		//follow the target
 		agent.SetDestination(target.transform.position);
 
-		//check if we're within melee distance
-		if(Vector3.Distance(target.transform.position, transform.position) <= agent.stoppingDistance){
-			//we're in melee range, go to the melee state
-			blackboard.SendEvent("InMeleeRange");
-		}
-
 	}
 
 	function RangedCheck(){
@@ -55,19 +49,13 @@ public class AIState_SeekingTarget extends NetworkBehaviour{
 			var rangedRoll : float = Random.value;
 			Debug.Log(rangedRoll);
 			if(rangedRoll <= rangedAttackChance){
-				//do a ranged attack
-				blackboard.SendEvent("DoRangedAttack");
-				//tell clients to do a ranged attack
-				RpcDoRangedAttack();
+				//tell the state controller to do a ranged attack
+				BroadcastMessage("TransitionEvent", "GoToRangedAttack");
+
 			}
 
 		}
 
-	}
-
-	@ClientRpc
-	function RpcDoRangedAttack(){
-		blackboard.SendEvent("DoRangedAttack");
 	}
 
 	function OnDisable(){

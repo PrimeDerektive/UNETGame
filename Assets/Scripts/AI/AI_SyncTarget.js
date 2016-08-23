@@ -7,7 +7,7 @@ public class AI_SyncTarget extends NetworkBehaviour{
 	var target : GameObjectVar;
 
 	@SyncVar(hook="OnTargetUpdate")
-	var targetNetId : uint;
+	var targetNetId : NetworkInstanceId;
 
 	//component references
 	var blackboard : Blackboard;
@@ -21,6 +21,12 @@ public class AI_SyncTarget extends NetworkBehaviour{
 		InvokeRepeating("CheckTarget", 0.0, 0.5);
 	}
 
+	function OnStartClient(){
+		//initialize state machine with initial syncvar value on clients
+		if(!isServer)
+			OnTargetUpdate(targetNetId);
+	}
+
 	var lastTarget : GameObject;
 
 	function CheckTarget(){
@@ -30,26 +36,25 @@ public class AI_SyncTarget extends NetworkBehaviour{
 			//target is different from the last target
 			if(lastTarget != target.Value){
 				//set the syncvar to the target's netId
-				targetNetId = target.Value.GetComponent.<NetworkIdentity>().netId.Value;
+				targetNetId = target.Value.GetComponent.<NetworkIdentity>().netId;
 				Debug.Log(targetNetId);
 			}
 			lastTarget = target;
 		}
 	}
 
-	//MOVE ALL THIS CODE TO ONSTARTCLIENT()
 	//SyncVar hook
-	function OnTargetUpdate(newTargetNetId : uint){
+	function OnTargetUpdate(newTargetNetId : NetworkInstanceId){
 		//set the blackboard target variable to the object we find with the netId
-		var newTarget = Utilities.FindNetworkObject(newTargetNetId).gameObject;
-		Debug.Log(newTargetNetId);
-		//var newTarget = ClientScene.FindLocalObject(newTargetNetId);
+		var newTarget = ClientScene.FindLocalObject(newTargetNetId);
 
 		//if our current target value (this includes null) doesn't equal the new target
-		target.Value = newTarget;
+		if(target.Value != newTarget)
+			target.Value = newTarget;
 
 		//we found a target, transition to next state
 		blackboard.SendEvent("FoundTarget");
 	}
+
 
 }

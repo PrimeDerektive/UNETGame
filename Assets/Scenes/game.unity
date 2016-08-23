@@ -2479,7 +2479,8 @@ GameObject:
   - 114: {fileID: 546039532}
   - 114: {fileID: 546039533}
   - 114: {fileID: 546039534}
-  - 114: {fileID: 546039535}
+  - 114: {fileID: 546039536}
+  - 114: {fileID: 546039537}
   m_Layer: 11
   m_Name: RobotTanker
   m_TagString: Robot
@@ -2536,11 +2537,9 @@ MonoBehaviour:
   m_StateName: Idle
   m_Color: 0
   m_HideScript: 1
-  m_Position: {x: 100, y: 20}
-  m_Transitions:
-  - m_Destination: {fileID: 546039527}
-    m_EventID: 1932563989
-  m_CachedInstanceID: 90070
+  m_Position: {x: 610, y: -320}
+  m_Transitions: []
+  m_CachedInstanceID: 64432
   m_Target: {fileID: 546039514}
   m_MonoBehaviour: {fileID: 546039516}
 --- !u!114 &546039518
@@ -2556,7 +2555,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotSpeed: 4
   attackAngle: 30
-  outOfRangeDistance: 5
   anim: {fileID: 0}
   blackboard: {fileID: 0}
 --- !u!143 &546039519
@@ -2685,12 +2683,12 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 90084
+  m_CachedInstanceID: 64446
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
   m_StartState: {fileID: 546039517}
-  m_AnyState: {fileID: 0}
+  m_AnyState: {fileID: 546039536}
   m_ConcurrentState: {fileID: 0}
 --- !u!114 &546039525
 MonoBehaviour:
@@ -2725,22 +2723,17 @@ MonoBehaviour:
   m_FsmEvents: []
   m_ConcreteFsmEvents:
   - m_ID: 1932563989
-    m_Name: FoundTarget
+    m_Name: GoToSeekingTarget
     m_Blackboard: {fileID: 546039525}
     m_IsConstant: 0
     m_IsSystem: 0
   - m_ID: 173484231
-    m_Name: InMeleeRange
-    m_Blackboard: {fileID: 546039525}
-    m_IsConstant: 0
-    m_IsSystem: 0
-  - m_ID: 29980150
-    m_Name: OutOfMeleeRange
+    m_Name: GoToMeleeAttack
     m_Blackboard: {fileID: 546039525}
     m_IsConstant: 0
     m_IsSystem: 0
   - m_ID: 507425973
-    m_Name: DoRangedAttack
+    m_Name: GoToRangedAttack
     m_Blackboard: {fileID: 546039525}
     m_IsConstant: 0
     m_IsSystem: 0
@@ -2779,13 +2772,9 @@ MonoBehaviour:
   m_StateName: SeekingTarget
   m_Color: 0
   m_HideScript: 1
-  m_Position: {x: 360, y: 20}
-  m_Transitions:
-  - m_Destination: {fileID: 546039528}
-    m_EventID: 173484231
-  - m_Destination: {fileID: 546039532}
-    m_EventID: 507425973
-  m_CachedInstanceID: 90090
+  m_Position: {x: 610, y: -240}
+  m_Transitions: []
+  m_CachedInstanceID: 64452
   m_Target: {fileID: 546039514}
   m_MonoBehaviour: {fileID: 546039515}
 --- !u!114 &546039528
@@ -2804,11 +2793,9 @@ MonoBehaviour:
   m_StateName: MeleeAttack
   m_Color: 0
   m_HideScript: 1
-  m_Position: {x: 600, y: 20}
-  m_Transitions:
-  - m_Destination: {fileID: 546039527}
-    m_EventID: 29980150
-  m_CachedInstanceID: 90092
+  m_Position: {x: 610, y: -80}
+  m_Transitions: []
+  m_CachedInstanceID: 64454
   m_Target: {fileID: 546039514}
   m_MonoBehaviour: {fileID: 546039518}
 --- !u!114 &546039529
@@ -2912,6 +2899,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94be99fd8e2aeaf4d86418a9d0ae8cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minDuration: 3
+  maxDuration: 6
   rotSpeed: 4
   attackAngle: 45
   barrel1: {fileID: 1586954386}
@@ -2939,11 +2928,9 @@ MonoBehaviour:
   m_StateName: RangedAttack
   m_Color: 0
   m_HideScript: 1
-  m_Position: {x: 600, y: -120}
-  m_Transitions:
-  - m_Destination: {fileID: 546039527}
-    m_EventID: -10
-  m_CachedInstanceID: 90100
+  m_Position: {x: 610, y: -160}
+  m_Transitions: []
+  m_CachedInstanceID: 64462
   m_Target: {fileID: 546039514}
   m_MonoBehaviour: {fileID: 546039531}
 --- !u!114 &546039533
@@ -2986,8 +2973,8 @@ MonoBehaviour:
   m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TransformSyncMode: 4
-  m_SendInterval: 0.33333334
+  m_TransformSyncMode: 1
+  m_SendInterval: 1
   m_SyncRotationAxis: 4
   m_RotationSyncCompression: 2
   m_SyncSpin: 0
@@ -2995,7 +2982,33 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
---- !u!114 &546039535
+--- !u!114 &546039536
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546039514}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bdb8748b26054306807051b76ae92dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Blackboard: {fileID: 546039525}
+  m_Parent: {fileID: 546039524}
+  m_StateName: AnyState
+  m_Color: 0
+  m_HideScript: 1
+  m_Position: {x: 360, y: -230}
+  m_Transitions:
+  - m_Destination: {fileID: 546039527}
+    m_EventID: 1932563989
+  - m_Destination: {fileID: 546039532}
+    m_EventID: 507425973
+  - m_Destination: {fileID: 546039528}
+    m_EventID: 173484231
+  m_CachedInstanceID: 64468
+  m_CanTransitionToSelf: 0
+--- !u!114 &546039537
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3003,12 +3016,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 546039514}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a3ed01d85e4af449aae0a26159c7bf8, type: 3}
+  m_Script: {fileID: 11500000, guid: b16011525a9cf934c930cd470a1a7581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetNetId: 0
+  syncState: 
+  stateMachine: {fileID: 0}
   blackboard: {fileID: 0}
-  lastTarget: {fileID: 0}
+  agent: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!1 &579239187
 GameObject:
   m_ObjectHideFlags: 0
