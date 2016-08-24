@@ -207,7 +207,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139740}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 3.4572163, y: -0.65, z: -7.157317}
+  m_LocalPosition: {x: 18.824144, y: -2, z: -8.013373}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
   m_Children:
@@ -518,7 +518,7 @@ ParticleSystem:
       m_PostInfinity: 2
       m_RotationOrder: 4
     minMaxState: 0
-  speed: 1
+  speed: 0.8
   randomSeed: 0
   looping: 0
   prewarm: 0
@@ -2002,7 +2002,7 @@ ParticleSystem:
       m_PostInfinity: 2
       m_RotationOrder: 4
     minMaxState: 0
-  speed: 1
+  speed: 0.8
   randomSeed: 0
   looping: 0
   prewarm: 0
@@ -3461,7 +3461,7 @@ ParticleSystem:
       m_PostInfinity: 2
       m_RotationOrder: 4
     minMaxState: 0
-  speed: 1
+  speed: 0.8
   randomSeed: 0
   looping: 0
   prewarm: 0
@@ -4920,7 +4920,7 @@ ParticleSystem:
       m_PostInfinity: 2
       m_RotationOrder: 4
     minMaxState: 0
-  speed: 1
+  speed: 0.8
   randomSeed: 0
   looping: 0
   prewarm: 0
@@ -6384,7 +6384,7 @@ ParticleSystem:
       m_PostInfinity: 2
       m_RotationOrder: 4
     minMaxState: 0
-  speed: 1
+  speed: 0.8
   randomSeed: 0
   looping: 0
   prewarm: 0
@@ -7823,7 +7823,7 @@ ParticleSystem:
       m_PostInfinity: 2
       m_RotationOrder: 4
     minMaxState: 0
-  speed: 1
+  speed: 0.8
   randomSeed: 0
   looping: 0
   prewarm: 0
@@ -9292,7 +9292,7 @@ ParticleSystem:
       m_PostInfinity: 2
       m_RotationOrder: 4
     minMaxState: 0
-  speed: 1
+  speed: 0.8
   randomSeed: 0
   looping: 0
   prewarm: 0
@@ -10706,7 +10706,7 @@ ParticleSystem:
       m_PostInfinity: 2
       m_RotationOrder: 4
     minMaxState: 0
-  speed: 1
+  speed: 0.8
   randomSeed: 0
   looping: 0
   prewarm: 0
@@ -11993,7 +11993,7 @@ ParticleSystem:
       minMaxState: 1
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 2
     type: 1
     collisionMode: 0
@@ -12170,7 +12170,7 @@ ParticleSystem:
       m_PostInfinity: 2
       m_RotationOrder: 4
     minMaxState: 0
-  speed: 1
+  speed: 0.8
   randomSeed: 0
   looping: 0
   prewarm: 0
