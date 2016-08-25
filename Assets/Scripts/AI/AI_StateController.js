@@ -80,7 +80,7 @@ public class AI_StateController extends NetworkBehaviour{
 			case "MeleeAttack":
 
 				//check if the target moved too far away for us to attack
-				if(currentAnimState.IsName("Idle") && Vector3.Distance(transform.position, target.transform.position) > agent.stoppingDistance){
+				if(currentAnimState.IsName("Idle") && ! anim.IsInTransition(0) && Vector3.Distance(transform.position, target.transform.position) > agent.stoppingDistance){
 					TransitionEvent("GoToSeekingTarget");
 				}
 
