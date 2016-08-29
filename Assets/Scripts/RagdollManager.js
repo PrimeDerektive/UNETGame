@@ -6,7 +6,6 @@ var rootRB : Rigidbody;
 private var ragdollRB : Rigidbody[];
 private var ragdolled : boolean = false;
 
-var simplePatrol : SimplePatrol;
 var anim : Animator;
 var agent : NavMeshAgent;
 
@@ -15,7 +14,6 @@ function Awake () {
 	for(var rb : Rigidbody in ragdollRB){
 		rb.isKinematic = true;
 	}
-	if(!simplePatrol) simplePatrol = GetComponent.<SimplePatrol>();
 	if(!anim) anim = GetComponent.<Animator>();
 	if(!agent) agent = GetComponent.<NavMeshAgent>();
 }
