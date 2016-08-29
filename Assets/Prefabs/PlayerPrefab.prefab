@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 493108}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GunBarrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,7 +24,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 483252}
   - 108: {fileID: 10803156}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 414932}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mixamorig:LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 432982}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftHandTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 449128}
   - 212: {fileID: 21268258}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 486092}
   - 212: {fileID: 21256778}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - 4: {fileID: 477298}
   - 33: {fileID: 3317804}
   - 23: {fileID: 2319282}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_ammo_rocket_launcher_02_rocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - 4: {fileID: 447410}
   - 33: {fileID: 3310934}
   - 23: {fileID: 2357316}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_submachine_gun_02_stock_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 433966}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GunBarrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 406502}
   - 212: {fileID: 21225628}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   - 4: {fileID: 431724}
   - 33: {fileID: 3366184}
   - 23: {fileID: 2354852}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_assault_rifle_01_trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - 4: {fileID: 484032}
   - 33: {fileID: 3389318}
   - 23: {fileID: 2397356}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_shotgun_01_silencer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,7 +218,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 450408}
   - 212: {fileID: 21268944}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   - 4: {fileID: 464234}
   - 33: {fileID: 3306032}
   - 23: {fileID: 2395404}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_assault_rifle_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   - 4: {fileID: 476186}
   - 33: {fileID: 3312950}
   - 23: {fileID: 2386690}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_sniper_rifle_01_bipod_leg_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ GameObject:
   - 4: {fileID: 442346}
   - 33: {fileID: 3304622}
   - 23: {fileID: 2364492}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_pistol_04_silencer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ GameObject:
   - 4: {fileID: 418882}
   - 33: {fileID: 3374718}
   - 23: {fileID: 2314234}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_shotgun_01_forend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   - 114: {fileID: 11442138}
   - 114: {fileID: 11446966}
   - 82: {fileID: 8293464}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +337,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 446860}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mixamorig:LeftToe_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   - 4: {fileID: 413270}
   - 33: {fileID: 3353154}
   - 23: {fileID: 2389214}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_ammo_rocket_launcher_02_rocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +369,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 415030}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mixamorig:Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -386,7 +386,7 @@ GameObject:
   - 4: {fileID: 422402}
   - 33: {fileID: 3331270}
   - 23: {fileID: 2388464}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_shotgun_02_trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   - 4: {fileID: 415198}
   - 33: {fileID: 3348652}
   - 23: {fileID: 2345674}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_rocket_launcher_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -436,7 +436,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 490634}
   - 114: {fileID: 11420670}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MuzzleFlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +453,7 @@ GameObject:
   - 4: {fileID: 481394}
   - 33: {fileID: 3323616}
   - 23: {fileID: 2324660}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_sniper_rifle_01_mag_clamps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +470,7 @@ GameObject:
   - 4: {fileID: 447548}
   - 33: {fileID: 3358936}
   - 23: {fileID: 2367726}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_shotgun_01_forend (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +503,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 499532}
   - 108: {fileID: 10808062}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,7 +519,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 412924}
   - 212: {fileID: 21288606}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,7 +535,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 441378}
   - 114: {fileID: 11429080}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Muzzle Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -552,7 +552,7 @@ GameObject:
   - 4: {fileID: 453786}
   - 33: {fileID: 3363700}
   - 23: {fileID: 2380124}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_pistol_02_scope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,7 +568,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 480680}
   - 114: {fileID: 11462894}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MuzzleFlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,7 +584,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 403744}
   - 212: {fileID: 21299328}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -633,7 +633,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 442624}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mixamorig:HeadTop_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -649,7 +649,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400386}
   - 137: {fileID: 13727918}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Basic_Gunner_Untitled.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -665,7 +665,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 418746}
   - 212: {fileID: 21243876}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -681,7 +681,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 478694}
   - 212: {fileID: 21256830}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -697,7 +697,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 492186}
   - 212: {fileID: 21209092}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -713,7 +713,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 413324}
   - 108: {fileID: 10852102}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -747,7 +747,7 @@ GameObject:
   - 4: {fileID: 431216}
   - 33: {fileID: 3368082}
   - 23: {fileID: 2387468}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_assault_rifle_01_grip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -764,7 +764,7 @@ GameObject:
   - 4: {fileID: 400738}
   - 95: {fileID: 9575204}
   - 114: {fileID: 11495408}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ToonSoldier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -796,7 +796,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 419980}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mixamorig:RightToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -828,7 +828,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 433468}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlasmaGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -845,7 +845,7 @@ GameObject:
   - 4: {fileID: 458884}
   - 33: {fileID: 3348434}
   - 23: {fileID: 2316340}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_submachine_gun_02_trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -887,7 +887,7 @@ GameObject:
   - 4: {fileID: 498688}
   - 33: {fileID: 3352906}
   - 23: {fileID: 2351132}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_sniper_rifle_01_bipod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -904,7 +904,7 @@ GameObject:
   - 4: {fileID: 477672}
   - 33: {fileID: 3352632}
   - 23: {fileID: 2390670}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_assault_rifle_01_cocking_lever
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -936,7 +936,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 435700}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mixamorig:RightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -951,7 +951,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 483152}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GunBarrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -970,7 +970,7 @@ GameObject:
   - 114: {fileID: 11419760}
   - 114: {fileID: 11409392}
   - 82: {fileID: 8214188}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PrecisionRifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -986,7 +986,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 452466}
   - 212: {fileID: 21287198}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1001,7 +1001,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 483590}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GunBarrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1018,7 +1018,7 @@ GameObject:
   - 4: {fileID: 483496}
   - 33: {fileID: 3350914}
   - 23: {fileID: 2324466}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_sniper_rifle_01_trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1035,7 +1035,7 @@ GameObject:
   - 4: {fileID: 482080}
   - 33: {fileID: 3330520}
   - 23: {fileID: 2395392}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_ammo_rocket_launcher_02_rocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1051,7 +1051,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 438474}
   - 212: {fileID: 21271598}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1066,7 +1066,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 462004}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftHandTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1081,7 +1081,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 451592}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mixamorig:LeftToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1115,7 +1115,7 @@ GameObject:
   - 4: {fileID: 427978}
   - 33: {fileID: 3320678}
   - 23: {fileID: 2350370}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_sniper_rifle_01_scope_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1132,7 +1132,7 @@ GameObject:
   - 4: {fileID: 464558}
   - 33: {fileID: 3385288}
   - 23: {fileID: 2300156}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_assault_rifle_01_silencer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1152,7 +1152,7 @@ GameObject:
   - 54: {fileID: 5443044}
   - 114: {fileID: 11432238}
   - 82: {fileID: 8292146}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RocketLauncher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1168,7 +1168,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 438800}
   - 212: {fileID: 21292008}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1202,7 +1202,7 @@ GameObject:
   - 4: {fileID: 433472}
   - 33: {fileID: 3316704}
   - 23: {fileID: 2380176}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_sniper_rifle_01_silencer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1219,7 +1219,7 @@ GameObject:
   - 4: {fileID: 487086}
   - 33: {fileID: 3351748}
   - 23: {fileID: 2391668}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_submachine_gun_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1234,7 +1234,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 445630}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GunBarrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1249,7 +1249,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 458664}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mixamorig:LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1264,7 +1264,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 466452}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftHandTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1281,7 +1281,7 @@ GameObject:
   - 4: {fileID: 483610}
   - 33: {fileID: 3365296}
   - 23: {fileID: 2334828}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_sniper_rifle_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1301,7 +1301,7 @@ GameObject:
   - 54: {fileID: 5429944}
   - 65: {fileID: 6573560}
   - 59: {fileID: 5916588}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_ammo_rocket_launcher_02_flap_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1320,7 +1320,7 @@ GameObject:
   - 114: {fileID: 11408724}
   - 114: {fileID: 11461880}
   - 82: {fileID: 8257018}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SniperRifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1335,7 +1335,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 491414}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mixamorig:Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1352,7 +1352,7 @@ GameObject:
   - 4: {fileID: 436036}
   - 33: {fileID: 3330294}
   - 23: {fileID: 2303218}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_assault_rifle_01_scope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1373,7 +1373,7 @@ GameObject:
   - 114: {fileID: 11472296}
   - 114: {fileID: 11445012}
   - 82: {fileID: 8217326}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AssaultRifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1390,7 +1390,7 @@ GameObject:
   - 4: {fileID: 400084}
   - 33: {fileID: 3360696}
   - 23: {fileID: 2302566}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_shotgun_02_forend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1407,7 +1407,7 @@ GameObject:
   - 4: {fileID: 460188}
   - 33: {fileID: 3301006}
   - 23: {fileID: 2396448}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_ammo_rocket_launcher_02_rocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1424,7 +1424,7 @@ GameObject:
   - 4: {fileID: 427754}
   - 33: {fileID: 3323152}
   - 23: {fileID: 2316214}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_sniper_rifle_01_cocking_lever
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1439,7 +1439,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 411114}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mixamorig:Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1455,7 +1455,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 452626}
   - 114: {fileID: 11477074}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MuzzleFlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1470,7 +1470,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 469838}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftHandTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1485,7 +1485,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 478146}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mixamorig:RightToe_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1502,7 +1502,7 @@ GameObject:
   - 4: {fileID: 478958}
   - 33: {fileID: 3343160}
   - 23: {fileID: 2364244}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_pistol_01_compensator (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1519,7 +1519,7 @@ GameObject:
   - 4: {fileID: 483462}
   - 33: {fileID: 3359282}
   - 23: {fileID: 2349980}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_shotgun_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1536,7 +1536,7 @@ GameObject:
   - 4: {fileID: 446148}
   - 33: {fileID: 3352218}
   - 23: {fileID: 2301050}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_sniper_rifle_01_bipod_leg_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1570,7 +1570,7 @@ GameObject:
   - 4: {fileID: 486546}
   - 33: {fileID: 3396134}
   - 23: {fileID: 2393400}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_rocket_launcher_02_rockets_holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1585,7 +1585,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 479306}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mixamorig:RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1600,7 +1600,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 476298}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftHandTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1617,7 +1617,7 @@ GameObject:
   - 4: {fileID: 409378}
   - 33: {fileID: 3355394}
   - 23: {fileID: 2374838}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scp_we_pistol_01_compensator (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1633,7 +1633,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 466388}
   - 108: {fileID: 10833148}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2887,7 +2887,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 149158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.6647, y: -2, z: -19.050797}
+  m_LocalPosition: {x: 11.642368, y: -2, z: -4.085453}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -5261,7 +5261,7 @@ MonoBehaviour:
   range: 250
   layerMask:
     serializedVersion: 2
-    m_Bits: 1536
+    m_Bits: 5120
   hitEffectRobot: {fileID: 0}
   hitEffectLevel: {fileID: 0}
 --- !u!114 &11409834
@@ -5655,7 +5655,7 @@ MonoBehaviour:
   range: 250
   layerMask:
     serializedVersion: 2
-    m_Bits: 1536
+    m_Bits: 5120
   hitEffectRobot: {fileID: 178398, guid: b1c4e0ef11df10f4f9263157680fd697, type: 2}
   hitEffectLevel: {fileID: 150652, guid: 22e9e141fb96abc478c55b5737264e1f, type: 2}
 --- !u!114 &11446966
@@ -5682,7 +5682,7 @@ MonoBehaviour:
   range: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 1536
+    m_Bits: 5120
   hitEffectRobot: {fileID: 0}
   hitEffectLevel: {fileID: 0}
 --- !u!114 &11448016
@@ -5852,7 +5852,7 @@ MonoBehaviour:
   range: 250
   layerMask:
     serializedVersion: 2
-    m_Bits: 1536
+    m_Bits: 5120
   hitEffectRobot: {fileID: 0}
   hitEffectLevel: {fileID: 0}
 --- !u!114 &11462894

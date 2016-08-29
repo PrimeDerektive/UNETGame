@@ -70,7 +70,7 @@ public class AI_StateController extends NetworkBehaviour{
 			case "SeekingTarget":
 
 				//check if we're within melee distance
-				if(Vector3.Distance(target.transform.position, transform.position) <= agent.stoppingDistance){
+				if(Vector3.Distance(target.transform.position, transform.position) <= agent.stoppingDistance){ //the 0.1 fixes a bug where he kept walking in place stuck on SeekingTarget
 					//we're in melee range, go to the melee state
 					TransitionEvent("GoToMeleeAttack");
 				}

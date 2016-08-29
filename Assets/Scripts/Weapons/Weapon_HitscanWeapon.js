@@ -28,7 +28,7 @@ public class Weapon_HitscanWeapon extends Weapon_Base{
 		//cast the hitscan ray
 		var hit : RaycastHit;
 		if(Physics.Raycast(barrel.position, barrel.forward, hit, range, layerMask)){
-			if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Hitbox")){
+			if(hit.collider.gameObject.layer == LayerMask.NameToLayer("RobotHitbox")){
 				hit.collider.gameObject.SendMessageUpwards("TakeDamage", 5.0, SendMessageOptions.DontRequireReceiver);
 				Instantiate(hitEffectRobot, hit.point, Quaternion.LookRotation(hit.normal));
 			}

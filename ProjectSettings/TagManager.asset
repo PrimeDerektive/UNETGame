@@ -17,10 +17,10 @@ TagManager:
   - 
   - 
   - Player
-  - Hitbox
+  - PlayerHitbox
   - Level
   - Robot
-  - 
+  - RobotHitbox
   - 
   - 
   - 

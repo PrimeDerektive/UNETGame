@@ -163,21 +163,21 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.16636203
+      - time: 0.21979715
         functionName: PlayMeleeWhoosh
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.4366197
+      - time: 0.39590722
         functionName: MeleeHit
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.75352114
+      - time: 0.67209613
         functionName: EndMeleeAttack
         data: 
         objectReferenceParameter: {instanceID: 0}

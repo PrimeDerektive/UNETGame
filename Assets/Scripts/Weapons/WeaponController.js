@@ -2,7 +2,6 @@
 import UnityEngine.Networking;
 import UnityStandardAssets.Cameras;
 
-
 @NetworkSettings(channel=1, sendInterval=0.1)
 public class WeaponController extends NetworkBehaviour{
 
