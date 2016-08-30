@@ -1,4 +1,5 @@
 ﻿#pragma strict
+import UnityEngine.Networking;
 
 @NetworkSettings(channel=1)
 public class AimTargetController extends NetworkBehaviour{

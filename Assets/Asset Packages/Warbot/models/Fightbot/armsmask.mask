@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1011 &101100000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: armsmask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: FBotmesh
+    m_Weight: 0
+  - m_Path: hipcontrol
+    m_Weight: 0
+  - m_Path: hipcontrol/spinecontrol
+    m_Weight: 0
+  - m_Path: hipcontrol/spinecontrol/chestcontrol
+    m_Weight: 0
+  - m_Path: hipcontrol/spinecontrol/chestcontrol/L_arm_Goal
+    m_Weight: 0
+  - m_Path: hipcontrol/spinecontrol/chestcontrol/L_arm_Goal/L_arm_Pole
+    m_Weight: 0
+  - m_Path: hipcontrol/spinecontrol/chestcontrol/L_arm_Goal/L_wrist_Goal
+    m_Weight: 0
+  - m_Path: hipcontrol/spinecontrol/chestcontrol/L_arm_Goal/L_wrist_Goal/L_fingers4_Goal
+    m_Weight: 0
+  - m_Path: hipcontrol/spinecontrol/chestcontrol/L_arm_Goal/L_wrist_Goal/L_thumb3_Goal
+    m_Weight: 0
+  - m_Path: hipcontrol/spinecontrol/chestcontrol/R_arm_Goal
+    m_Weight: 0
+  - m_Path: hipcontrol/spinecontrol/chestcontrol/R_arm_Goal/R_arm_Pole
+    m_Weight: 0
+  - m_Path: hipcontrol/spinecontrol/chestcontrol/R_arm_Goal/R_wrist_Goal
+    m_Weight: 0
+  - m_Path: hipcontrol/spinecontrol/chestcontrol/R_arm_Goal/R_wrist_Goal/R_fingers4_Goal
+    m_Weight: 0
+  - m_Path: hipcontrol/spinecontrol/chestcontrol/R_arm_Goal/R_wrist_Goal/R_thumb3_Goal
+    m_Weight: 0
+  - m_Path: hips
+    m_Weight: 0
+  - m_Path: hips/L_leg
+    m_Weight: 0
+  - m_Path: hips/L_leg/L_knee
+    m_Weight: 0
+  - m_Path: hips/L_leg/L_knee/L_ankle1
+    m_Weight: 0
+  - m_Path: hips/L_leg/L_knee/L_ankle1/L_ankle
+    m_Weight: 0
+  - m_Path: hips/L_leg/L_knee/L_ankle1/L_ankle/L_foot
+    m_Weight: 0
+  - m_Path: hips/L_leg/L_knee/L_ankle1/L_ankle/L_foot/L_toes
+    m_Weight: 0
+  - m_Path: hips/R_leg
+    m_Weight: 0
+  - m_Path: hips/R_leg/R_knee
+    m_Weight: 0
+  - m_Path: hips/R_leg/R_knee/R_ankle1
+    m_Weight: 0
+  - m_Path: hips/R_leg/R_knee/R_ankle1/R_ankle
+    m_Weight: 0
+  - m_Path: hips/R_leg/R_knee/R_ankle1/R_ankle/R_foot
+    m_Weight: 0
+  - m_Path: hips/R_leg/R_knee/R_ankle1/R_ankle/R_foot/R_toes
+    m_Weight: 0
+  - m_Path: hips/spine
+    m_Weight: 0
+  - m_Path: hips/spine/chest
+    m_Weight: 1
+  - m_Path: hips/spine/chest/L_shoulder
+    m_Weight: 1
+  - m_Path: hips/spine/chest/L_shoulder/Joint_1
+    m_Weight: 1
+  - m_Path: hips/spine/chest/L_shoulder/Joint_1/Joint_2
+    m_Weight: 1
+  - m_Path: hips/spine/chest/L_shoulder/Joint_1/Joint_2/Joint_3
+    m_Weight: 1
+  - m_Path: hips/spine/chest/L_shoulder/Joint_1/Joint_2/Joint_3/L_arm
+    m_Weight: 1
+  - m_Path: hips/spine/chest/L_shoulder/Joint_1/Joint_2/Joint_3/L_arm/L_elbow
+    m_Weight: 1
+  - m_Path: hips/spine/chest/L_shoulder/Joint_1/Joint_2/Joint_3/L_arm/L_elbow/L_wrist
+    m_Weight: 1
+  - m_Path: hips/spine/chest/L_shoulder/Joint_1/Joint_2/Joint_3/L_arm/L_elbow/L_wrist/L_fingers1
+    m_Weight: 1
+  - m_Path: hips/spine/chest/L_shoulder/Joint_1/Joint_2/Joint_3/L_arm/L_elbow/L_wrist/L_fingers1/L_fingers2
+    m_Weight: 1
+  - m_Path: hips/spine/chest/L_shoulder/Joint_1/Joint_2/Joint_3/L_arm/L_elbow/L_wrist/L_fingers1/L_fingers2/L_fingers3
+    m_Weight: 1
+  - m_Path: hips/spine/chest/L_shoulder/Joint_1/Joint_2/Joint_3/L_arm/L_elbow/L_wrist/L_fingers1/L_fingers2/L_fingers3/L_fingers4
+    m_Weight: 1
+  - m_Path: hips/spine/chest/L_shoulder/Joint_1/Joint_2/Joint_3/L_arm/L_elbow/L_wrist/L_fingers1/L_fingers2/L_fingers3/L_fingers4/Joint_4
+    m_Weight: 1
+  - m_Path: hips/spine/chest/L_shoulder/Joint_1/Joint_2/Joint_3/L_arm/L_elbow/L_wrist/L_thumb1
+    m_Weight: 1
+  - m_Path: hips/spine/chest/L_shoulder/Joint_1/Joint_2/Joint_3/L_arm/L_elbow/L_wrist/L_thumb1/L_thumb2
+    m_Weight: 1
+  - m_Path: hips/spine/chest/L_shoulder/Joint_1/Joint_2/Joint_3/L_arm/L_elbow/L_wrist/L_thumb1/L_thumb2/L_thumb3
+    m_Weight: 1
+  - m_Path: hips/spine/chest/L_shoulder/Joint_1/Joint_2/Joint_3/L_arm/L_elbow/L_wrist/L_thumb1/L_thumb2/L_thumb3/Joint_3_2
+    m_Weight: 1
+  - m_Path: hips/spine/chest/R_shoulder
+    m_Weight: 1
+  - m_Path: hips/spine/chest/R_shoulder/Joint_1_2
+    m_Weight: 1
+  - m_Path: hips/spine/chest/R_shoulder/Joint_1_2/Joint_2_2
+    m_Weight: 1
+  - m_Path: hips/spine/chest/R_shoulder/Joint_1_2/Joint_2_2/Joint_3_3
+    m_Weight: 1
+  - m_Path: hips/spine/chest/R_shoulder/Joint_1_2/Joint_2_2/Joint_3_3/R_arm
+    m_Weight: 1
+  - m_Path: hips/spine/chest/R_shoulder/Joint_1_2/Joint_2_2/Joint_3_3/R_arm/R_elbow
+    m_Weight: 1
+  - m_Path: hips/spine/chest/R_shoulder/Joint_1_2/Joint_2_2/Joint_3_3/R_arm/R_elbow/R_wrist
+    m_Weight: 1
+  - m_Path: hips/spine/chest/R_shoulder/Joint_1_2/Joint_2_2/Joint_3_3/R_arm/R_elbow/R_wrist/R_fingers1
+    m_Weight: 1
+  - m_Path: hips/spine/chest/R_shoulder/Joint_1_2/Joint_2_2/Joint_3_3/R_arm/R_elbow/R_wrist/R_fingers1/R_fingers2
+    m_Weight: 1
+  - m_Path: hips/spine/chest/R_shoulder/Joint_1_2/Joint_2_2/Joint_3_3/R_arm/R_elbow/R_wrist/R_fingers1/R_fingers2/R_fingers3
+    m_Weight: 1
+  - m_Path: hips/spine/chest/R_shoulder/Joint_1_2/Joint_2_2/Joint_3_3/R_arm/R_elbow/R_wrist/R_fingers1/R_fingers2/R_fingers3/R_fingers4
+    m_Weight: 1
+  - m_Path: hips/spine/chest/R_shoulder/Joint_1_2/Joint_2_2/Joint_3_3/R_arm/R_elbow/R_wrist/R_fingers1/R_fingers2/R_fingers3/R_fingers4/Joint_4_2
+    m_Weight: 1
+  - m_Path: hips/spine/chest/R_shoulder/Joint_1_2/Joint_2_2/Joint_3_3/R_arm/R_elbow/R_wrist/R_thumb1
+    m_Weight: 1
+  - m_Path: hips/spine/chest/R_shoulder/Joint_1_2/Joint_2_2/Joint_3_3/R_arm/R_elbow/R_wrist/R_thumb1/R_thumb2
+    m_Weight: 1
+  - m_Path: hips/spine/chest/R_shoulder/Joint_1_2/Joint_2_2/Joint_3_3/R_arm/R_elbow/R_wrist/R_thumb1/R_thumb2/R_thumb3
+    m_Weight: 1
+  - m_Path: hips/spine/chest/R_shoulder/Joint_1_2/Joint_2_2/Joint_3_3/R_arm/R_elbow/R_wrist/R_thumb1/R_thumb2/R_thumb3/Joint_3_4
+    m_Weight: 1
+  - m_Path: L_ankle_Goal
+    m_Weight: 1
+  - m_Path: R_ankle_Goal
+    m_Weight: 1
+  - m_Path: scene
+    m_Weight: 1
