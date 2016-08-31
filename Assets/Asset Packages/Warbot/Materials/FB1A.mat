@@ -7,10 +7,10 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: FB1A
-  m_Shader: {fileID: 4800000, guid: 6782973e3ca8b2543beddb0a3dc3175e, type: 3}
-  m_ShaderKeywords: TCP2_BUMP TCP2_RAMPTEXT _EMISSION _NORMALMAP _SPECGLOSSMAP
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: TCP2_BUMP TCP2_RAMPTEXT _EMISSION _SPECGLOSSMAP
   m_LightmapFlags: 1
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -26,7 +26,7 @@ Material:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: de7761f3e61f3344792d55ef2073a521, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -54,7 +54,7 @@ Material:
         first:
           name: _EmissionMap
         second:
-          m_Texture: {fileID: 2800000, guid: 9b0aa727fc97d9d45a750bc77c9e652c, type: 3}
+          m_Texture: {fileID: 2800000, guid: 052c71796624f4920a00a786f227cfce, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -110,7 +110,7 @@ Material:
         first:
           name: _Ramp
         second:
-          m_Texture: {fileID: 2800000, guid: abc83c21d57d4a74cabe12065fa1a8b2, type: 3}
+          m_Texture: {fileID: 2800000, guid: a2daa9b606711a643808bebed4c59a0c, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -137,7 +137,7 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: 0.5
+        second: 0.25
       data:
         first:
           name: _BumpScale
@@ -161,7 +161,7 @@ Material:
       data:
         first:
           name: _Metallic
-        second: 0
+        second: 0.25
       data:
         first:
           name: _RefIntensity
@@ -178,7 +178,7 @@ Material:
       data:
         first:
           name: _EmissionColor
-        second: {r: 0.021463256, g: 0.89425206, b: 0.973, a: 1}
+        second: {r: 0.27205878, g: 0.78914803, b: 1, a: 1}
       data:
         first:
           name: _Color
@@ -194,8 +194,8 @@ Material:
       data:
         first:
           name: _HColor
-        second: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _SColor
-        second: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+        second: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 1}
