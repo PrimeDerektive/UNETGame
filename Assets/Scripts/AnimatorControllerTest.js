@@ -2,7 +2,9 @@
 
 var maxSpeed : float = 3.0;
 var dampTime : float = 0.2;
+var isDroid : boolean = false;
 
+//component references
 var anim : Animator;
 
 private var velocity : Vector3; 
@@ -10,7 +12,7 @@ private var lastPos : Vector3 = Vector3.zero;
 private var lastForward : Vector3 = Vector3.zero;
 
 function Start () {
-	anim = GetComponent.<Animator>();
+	if(!anim) anim = GetComponent.<Animator>();
 }
 
 function FixedUpdate(){
@@ -22,6 +24,12 @@ function FixedUpdate(){
 
 	//get angle between last forward and current forward
 	var direction : float = Utilities.FindTurningAngle(transform.forward, lastForward);
+
+	//droid players handle turning differently
+	if(isDroid)
+		direction = Utilities.FindTurningAngle(transform.forward, Camera.main.transform.forward);
+
+
 	//set the direction in the animator
 	anim.SetFloat("direction", direction);
 

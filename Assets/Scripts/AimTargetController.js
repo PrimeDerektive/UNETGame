@@ -11,9 +11,13 @@ public class AimTargetController extends NetworkBehaviour{
 	var remoteAimSmoothing : float = 10.0;
 	var isDroid : boolean = false;
 
+	//component references
+	var anim : Animator;
+
 	private var mainCam : Transform;
 
 	function Start(){
+		if(!anim) anim = GetComponentInChildren.<Animator>();
 		mainCam = Camera.main.transform;
 		aimTarget.parent = null;
 	}
@@ -38,6 +42,8 @@ public class AimTargetController extends NetworkBehaviour{
 
 	}
 
+	private var turnSpeed : float = 0.0;
+
 	//rotate towards the aimTarget in LateUpdate()
 	function LateUpdate () {
 
@@ -46,6 +52,24 @@ public class AimTargetController extends NetworkBehaviour{
 		dirToAimTarget.y = transform.forward.y; //kill Y so we only rotate on Y axis
 
 		if(isDroid){
+
+			var currentState = anim.GetCurrentAnimatorStateInfo(0);
+
+
+			if(currentState.IsName("TurnRight") || currentState.IsName("TurnLeft")){
+				turnSpeed = 0.75;
+				transform.forward = Vector3.Slerp(transform.forward, dirToAimTarget, Time.deltaTime * turnSpeed);
+			}
+			else if(
+				anim.GetFloat("speedX") > 0.1 ||
+				anim.GetFloat("speedX") < -0.1 ||
+				anim.GetFloat("speedY") > 0.1 ||
+				anim.GetFloat("speedY") < -0.1
+			){
+				//both the owner and remotes smoothly rotate toward aimTarget during movement as a droid
+				turnSpeed = Mathf.Lerp(turnSpeed, remoteAimSmoothing, Time.deltaTime);
+				transform.forward = Vector3.Slerp(transform.forward, dirToAimTarget, Time.deltaTime * turnSpeed);
+			}
 
 		}
 		else{
