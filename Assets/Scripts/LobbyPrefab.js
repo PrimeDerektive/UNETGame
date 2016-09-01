@@ -10,6 +10,9 @@ public class LobbyPrefab extends NetworkBehaviour{
 	@Command
 	function CmdSpawnPlayerPrefab(sendingPlayerId : NetworkInstanceId, isSpawningDroid : boolean){
 
+		var prefabToSpawn : GameObject = soldierPrefab;
+		if(isSpawningDroid) prefabToSpawn = droidPrefab;
+
 		//get the sending player's existing lobby prefab
 		var oldPlayerPrefab = NetworkServer.FindLocalObject(sendingPlayerId);
 
@@ -17,7 +20,7 @@ public class LobbyPrefab extends NetworkBehaviour{
 		var connection = oldPlayerPrefab.GetComponent.<NetworkIdentity>().connectionToClient;
 
 		//spawn him a new prefab
-		var newPlayerPrefab = Instantiate(soldierPrefab, oldPlayerPrefab.transform.position, oldPlayerPrefab.transform.rotation);
+		var newPlayerPrefab = Instantiate(prefabToSpawn, oldPlayerPrefab.transform.position, oldPlayerPrefab.transform.rotation);
         
 		//replace his lobby prefab with the new prefab as his owned network object
         NetworkServer.ReplacePlayerForConnection(connection, newPlayerPrefab, 0);
@@ -33,7 +36,7 @@ public class LobbyPrefab extends NetworkBehaviour{
 				CmdSpawnPlayerPrefab(GetComponent.<NetworkIdentity>().netId, false);
 			}
 			if (GUI.Button (Rect ((Screen.width*0.5) + 10, (Screen.height*0.5) - 15, 150, 30), "Spawn as Droid")){
-			
+				CmdSpawnPlayerPrefab(GetComponent.<NetworkIdentity>().netId, true);
 			}
 		}
 	}

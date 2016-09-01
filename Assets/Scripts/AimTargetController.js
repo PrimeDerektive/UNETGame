@@ -9,6 +9,7 @@ public class AimTargetController extends NetworkBehaviour{
 	var range : float = 250.0;
 	var layerMask : LayerMask;
 	var remoteAimSmoothing : float = 10.0;
+	var isDroid : boolean = false;
 
 	private var mainCam : Transform;
 
@@ -43,14 +44,21 @@ public class AimTargetController extends NetworkBehaviour{
 		//get the direction to the aimTarget
 		var dirToAimTarget = aimTarget.position - transform.position;
 		dirToAimTarget.y = transform.forward.y; //kill Y so we only rotate on Y axis
-		
-		if(isLocalPlayer){
-			//local player can snap to direction immediately because he's updating it every frame
-			transform.forward = dirToAimTarget;
+
+		if(isDroid){
+
 		}
 		else{
-			//remote players must smoothly look at the aimTarget as they're only updating 10x/sec
-			transform.forward = Vector3.Slerp(transform.forward, dirToAimTarget, Time.deltaTime * remoteAimSmoothing);
+		
+			if(isLocalPlayer){
+				//local player can snap to direction immediately because he's updating it every frame
+				transform.forward = dirToAimTarget;
+			}
+			else{
+				//remote players must smoothly look at the aimTarget as they're only updating 10x/sec
+				transform.forward = Vector3.Slerp(transform.forward, dirToAimTarget, Time.deltaTime * remoteAimSmoothing);
+			}
+
 		}
 
 	}

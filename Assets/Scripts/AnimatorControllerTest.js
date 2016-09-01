@@ -3,8 +3,9 @@
 var maxSpeed : float = 3.0;
 var dampTime : float = 0.2;
 
+var anim : Animator;
+
 private var velocity : Vector3; 
-private var anim : Animator;
 private var lastPos : Vector3 = Vector3.zero;
 private var lastForward : Vector3 = Vector3.zero;
 

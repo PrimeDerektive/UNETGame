@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soldierPrefab: {fileID: 149158, guid: 8d374ff1833874283965a54471839ea2, type: 2}
-  droidPrefab: {fileID: 0}
+  droidPrefab: {fileID: 104734, guid: e6a2dcf46f091644a8c828aa227c4a26, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

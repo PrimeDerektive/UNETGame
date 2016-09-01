@@ -161,7 +161,7 @@ Material:
       data:
         first:
           name: _Metallic
-        second: 0.25
+        second: 0
       data:
         first:
           name: _RefIntensity
@@ -178,7 +178,7 @@ Material:
       data:
         first:
           name: _EmissionColor
-        second: {r: 0.27205878, g: 0.78914803, b: 1, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _Color
