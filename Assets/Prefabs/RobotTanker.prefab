@@ -38,13 +38,13 @@ GameObject:
   - 82: {fileID: 8230624}
   - 114: {fileID: 11431386}
   - 114: {fileID: 11419662}
-  - 114: {fileID: 11473922}
   - 114: {fileID: 11489060}
   - 114: {fileID: 11427362}
   - 114: {fileID: 11448260}
   - 114: {fileID: 11469664}
   - 114: {fileID: 11425508}
   - 114: {fileID: 11435822}
+  - 114: {fileID: 11490264}
   m_Layer: 11
   m_Name: RobotTanker
   m_TagString: Robot
@@ -1098,7 +1098,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 102334}
   m_LocalRotation: {x: 0, y: -0.000000059604645, z: 0, w: 1}
-  m_LocalPosition: {x: 7.52849, y: -2, z: -5.2448416}
+  m_LocalPosition: {x: 14.268874, y: -2, z: 33.77899}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1480,7 +1480,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184116}
-  m_LocalRotation: {x: 0.67988825, y: 0.7330599, z: 0.011128186, w: -0.015858052}
+  m_LocalRotation: {x: 0.6798882, y: 0.7330598, z: 0.011128185, w: -0.01585805}
   m_LocalPosition: {x: -0.708, y: -0.259, z: 0.027}
   m_LocalScale: {x: 0.9137137, y: 0.55276453, z: 0.835161}
   m_LocalEulerAnglesHint: {x: -2.1708, y: -179.5345, z: 85.6809}
@@ -2043,7 +2043,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 610, y: -80}
   m_Transitions: []
-  m_CachedInstanceID: 36608
+  m_CachedInstanceID: 37010
   m_Target: {fileID: 102334}
   m_MonoBehaviour: {fileID: 11431386}
 --- !u!114 &11425508
@@ -2127,7 +2127,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 610, y: -160}
   m_Transitions: []
-  m_CachedInstanceID: 36614
+  m_CachedInstanceID: 37016
   m_Target: {fileID: 102334}
   m_MonoBehaviour: {fileID: 11489060}
 --- !u!114 &11431386
@@ -2241,7 +2241,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 610, y: -240}
   m_Transitions: []
-  m_CachedInstanceID: 36600
+  m_CachedInstanceID: 37002
   m_Target: {fileID: 102334}
   m_MonoBehaviour: {fileID: 11406314}
 --- !u!114 &11469664
@@ -2268,24 +2268,8 @@ MonoBehaviour:
     m_EventID: 507425973
   - m_Destination: {fileID: 11419662}
     m_EventID: 173484231
-  m_CachedInstanceID: 36618
+  m_CachedInstanceID: 37020
   m_CanTransitionToSelf: 0
---- !u!114 &11473922
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 102334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 412e1269be58f594dafbb217622183ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftFoot: {fileID: 467738}
-  rightFoot: {fileID: 442992}
-  footstepEffect: {fileID: 137480, guid: 4fd6e3136b9a2354cbd876b4b11ed6fa, type: 2}
-  footstepClip: {fileID: 8300000, guid: 7d48fffe6520f2f448c40fd79360ccc6, type: 3}
-  audioSource: {fileID: 0}
 --- !u!114 &11488510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2343,13 +2327,35 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 36594
+  m_CachedInstanceID: 36996
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
   m_StartState: {fileID: 11496670}
   m_AnyState: {fileID: 11469664}
   m_ConcurrentState: {fileID: 0}
+--- !u!114 &11490264
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50106aaf468e7e4cb868450da4ff949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftFoot: {fileID: 467738}
+  rightFoot: {fileID: 442992}
+  leftFootGrounded: 1
+  rightFootGrounded: 1
+  rayDistance: 1.5
+  footstepEffect: {fileID: 137480, guid: 475bb2fa814ef45b8a989ee3870e3c16, type: 2}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  groundOffset: 0.1
+  minTimeBetweenSteps: 0.5
 --- !u!114 &11496670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2368,7 +2374,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 610, y: -320}
   m_Transitions: []
-  m_CachedInstanceID: 36596
+  m_CachedInstanceID: 36998
   m_Target: {fileID: 102334}
   m_MonoBehaviour: {fileID: 11406254}
 --- !u!135 &13580460

@@ -764,6 +764,7 @@ GameObject:
   - 4: {fileID: 400738}
   - 95: {fileID: 9575204}
   - 114: {fileID: 11495408}
+  - 114: {fileID: 11436708}
   m_Layer: 9
   m_Name: ToonSoldier
   m_TagString: Untagged
@@ -871,7 +872,7 @@ GameObject:
   - 114: {fileID: 11458464}
   - 114: {fileID: 11491622}
   m_Layer: 8
-  m_Name: PlayerPrefab
+  m_Name: SoldierPrefab
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1876,7 +1877,7 @@ Transform:
   m_LocalRotation: {x: 0.50359493, y: 0.02209285, z: -0.034037147, w: 0.8629864}
   m_LocalPosition: {x: 3.9968027e-17, y: 0.3952328, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 60.539497, y: 0.44849998, z: -4.2555}
   m_Children:
   - {fileID: 451592}
   m_Father: {fileID: 494326}
@@ -2887,7 +2888,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 149158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.642368, y: -2, z: -4.085453}
+  m_LocalPosition: {x: 14.028681, y: -0.39, z: 37.697716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -5519,6 +5520,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32bc6097946fb4c2ab3bc567a062026c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11436708
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50106aaf468e7e4cb868450da4ff949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftFoot: {fileID: 414932}
+  rightFoot: {fileID: 479306}
+  leftFootGrounded: 1
+  rightFootGrounded: 1
+  rayDistance: 0.15
+  footstepEffect: {fileID: 137480, guid: 4fd6e3136b9a2354cbd876b4b11ed6fa, type: 2}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  groundOffset: 0.05
+  minTimeBetweenSteps: 0.25
 --- !u!114 &11438152
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6085,6 +6108,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1536
   remoteAimSmoothing: 10
+  isDroid: 0
+  anim: {fileID: 0}
 --- !u!114 &11489878
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6171,6 +6196,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 3
   dampTime: 0.2
+  isDroid: 0
+  anim: {fileID: 0}
 --- !u!114 &11498824
 MonoBehaviour:
   m_ObjectHideFlags: 1

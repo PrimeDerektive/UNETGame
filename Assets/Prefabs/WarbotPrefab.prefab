@@ -47,6 +47,7 @@ GameObject:
   - 114: {fileID: 11455926}
   - 114: {fileID: 11449550}
   - 114: {fileID: 11430848}
+  - 114: {fileID: 11454194}
   m_Layer: 0
   m_Name: WarbotPrefab
   m_TagString: Untagged
@@ -426,7 +427,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 434790}
-  - 114: {fileID: 11404972}
   m_Layer: 0
   m_Name: R_foot
   m_TagString: Untagged
@@ -687,7 +687,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 402552}
-  - 114: {fileID: 11408268}
   m_Layer: 0
   m_Name: L_foot
   m_TagString: Untagged
@@ -1442,7 +1441,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104734}
   m_LocalRotation: {x: 0, y: 0.9645153, z: 0, w: -0.26402706}
-  m_LocalPosition: {x: -2.3876796, y: -6.9681563, z: 5.9438276}
+  m_LocalPosition: {x: 5.4873343, y: -2, z: 17.22652}
   m_LocalScale: {x: 6.5, y: 7.5, z: 7.5}
   m_LocalEulerAnglesHint: {x: 0, y: 210.6183, z: 0}
   m_Children:
@@ -2355,40 +2354,6 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
---- !u!114 &11404972
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a50106aaf468e7e4cb868450da4ff949, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rayDistance: 2
-  footstepEffect: {fileID: 176952, guid: 2c4a132896ba24b4e9121c948b5ce033, type: 2}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  grounded: 1
---- !u!114 &11408268
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 154458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a50106aaf468e7e4cb868450da4ff949, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rayDistance: 2
-  footstepEffect: {fileID: 176952, guid: 2c4a132896ba24b4e9121c948b5ce033, type: 2}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  grounded: 1
 --- !u!114 &11422136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2953,6 +2918,28 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+--- !u!114 &11454194
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50106aaf468e7e4cb868450da4ff949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftFoot: {fileID: 402552}
+  rightFoot: {fileID: 434790}
+  leftFootGrounded: 1
+  rightFootGrounded: 1
+  rayDistance: 2
+  footstepEffect: {fileID: 176952, guid: 2c4a132896ba24b4e9121c948b5ce033, type: 2}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  groundOffset: 1
+  minTimeBetweenSteps: 1
 --- !u!114 &11455926
 MonoBehaviour:
   m_ObjectHideFlags: 1
