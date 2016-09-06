@@ -2,7 +2,9 @@
 
 var maxSpeed : float = 3.0;
 var dampTime : float = 0.2;
-var isDroid : boolean = false;
+var aimTarget : Transform;
+
+var calcVelocity : boolean = true;
 
 //component references
 var anim : Animator;
@@ -25,29 +27,28 @@ function FixedUpdate(){
 	//get angle between last forward and current forward
 	var direction : float = Utilities.FindTurningAngle(transform.forward, lastForward);
 
-	//droid players handle turning differently
-	if(isDroid)
-		direction = Utilities.FindTurningAngle(transform.forward, Camera.main.transform.forward);
-
-
 	//set the direction in the animator
 	anim.SetFloat("direction", direction);
 
 	//cache the last frame's position	
 	lastPos = transform.position;
 	//cache last frames forward
-	lastForward = transform.forward;
+	lastForward = (aimTarget.position - transform.position).normalized;
 
 }
 
 function Update () {
 
-	//clamp both speeds to from -1 - 1
-	var speedX = Mathf.Clamp(velocity.x/maxSpeed, -1.0, 1.0);
-	var speedY = Mathf.Clamp(velocity.z/maxSpeed, -1.0, 1.0);
+	if(calcVelocity){
 
-	//send the values to the animator
-	anim.SetFloat("speedX", speedX, dampTime, Time.deltaTime);
-	anim.SetFloat("speedY", speedY, dampTime, Time.deltaTime);
+		//clamp both speeds to from -1 - 1
+		var speedX = Mathf.Clamp(velocity.x/maxSpeed, -1.0, 1.0);
+		var speedY = Mathf.Clamp(velocity.z/maxSpeed, -1.0, 1.0);
+
+		//send the values to the animator
+		anim.SetFloat("speedX", speedX, dampTime, Time.deltaTime);
+		anim.SetFloat("speedY", speedY, dampTime, Time.deltaTime);
+
+	}
 
 }

@@ -11,13 +11,18 @@ var groundLayer : LayerMask;
 var groundOffset : float = 1.0;
 var minTimeBetweenSteps = 0.5;
 
+var delayStart : float = 0.0;
+
 private var nextStepAllowed : float = 0.0;
+
+function Start(){
+	nextStepAllowed = Time.time + delayStart;
+}
 
 function LateUpdate(){
 
 	//cast the hitscan ray
 	var hit : RaycastHit;
-
 
 	if(Physics.Raycast(leftFoot.position, -Vector3.up, hit, rayDistance, groundLayer)){
 		if(!leftFootGrounded && Time.time > nextStepAllowed){
