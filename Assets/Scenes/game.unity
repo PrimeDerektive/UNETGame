@@ -143,7 +143,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   robotTankerPrefab: {fileID: 102334, guid: 9e1ba43fda923614ca1c0297a7f464f7, type: 2}
-  spawnEffect: {fileID: 156224, guid: 6e09197a1b073394d947d3738dffd813, type: 2}
 --- !u!114 &557609257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,7 +272,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &633318011
 MeshRenderer:
@@ -724,7 +723,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967263
   m_IsActive: 1
 --- !u!23 &1872557170
 MeshRenderer:

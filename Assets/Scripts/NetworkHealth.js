@@ -10,10 +10,6 @@ public class NetworkHealth extends NetworkBehaviour{
 	@SyncVar(hook="OnHealthUpdate")
 	var currentHealth : int = maxHealth;
 
-	function Start(){
-		iTween.ScaleFrom(gameObject, Vector3.zero, 0.5);
-	}
-
 	function TakeDamage(amount : int){
 
 		//only the server directly manipulates health values

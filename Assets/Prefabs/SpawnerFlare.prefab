@@ -449,6 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9749bb335a7655a45b8efdafffdf180d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  robotPrefab: {fileID: 102334, guid: 9e1ba43fda923614ca1c0297a7f464f7, type: 2}
   spawnRadius: 10
   spawnerLayer:
     serializedVersion: 2

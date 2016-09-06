@@ -4,6 +4,7 @@ import UnityEngine.Networking;
 
 public class SpawnerFlare extends NetworkBehaviour{
 
+	var robotPrefab : GameObject;
 	var spawnRadius : float = 10.0;
 	var spawnerLayer : LayerMask;
 	var robotsToSpawn : int = 5;
@@ -43,9 +44,13 @@ public class SpawnerFlare extends NetworkBehaviour{
 			yield;
 		}
 		//if we got here, we found all the spawns
+		yield WaitForSeconds(5.0);
 		for(spawnPoint in spawnPoints){
-			Debug.DrawRay(spawnPoint, Vector3.up*5.0, Color.red, 5.0);
+			var newRobot = Instantiate(robotPrefab, spawnPoint, Quaternion.Euler(0, Random.Range(0, 180), 0));
+			NetworkServer.Spawn(newRobot);
+			yield WaitForSeconds(0.5);
 		}
+
 	}
 
 }
