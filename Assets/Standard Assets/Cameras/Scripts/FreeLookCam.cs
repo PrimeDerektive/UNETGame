@@ -13,13 +13,22 @@ namespace UnityStandardAssets.Cameras
         // 		Pivot
         // 			Camera
 
-        [SerializeField] private float m_MoveSpeed = 1f;                      // How fast the rig will move to keep up with the target's position.
-        [Range(0f, 10f)] [SerializeField] public float m_TurnSpeed = 1.5f;   // How fast the rig will rotate from user input.
-        [SerializeField] private float m_TurnSmoothing = 0.1f;                // How much smoothing to apply to the turn input, to reduce mouse-turn jerkiness
+        [SerializeField] private float m_MoveSpeed = 10f;                      // How fast the rig will move to keep up with the target's position.
+		[Range(0f, 10f)] [SerializeField] public float m_TurnSpeed = 1.5f;   // How fast the rig will rotate from user input.
+		[SerializeField] private float m_TurnSmoothing = 0.1f;   
+        [Range(0f, 10f)] [SerializeField] public float m_TurnSpeedSoldier = 5.0f;   // How fast the rig will rotate from user input.
+        [SerializeField] private float m_TurnSmoothingSoldier = 10.0f;                // How much smoothing to apply to the turn input, to reduce mouse-turn jerkiness
+		[SerializeField] private Vector3 m_PivotPositionSoldier = new Vector3(1.0f, 1.0f, 0f);
+		[SerializeField] private Vector3 m_CamPositionSoldier = new Vector3(0.0f, 0.0f, -4.0f);
+		[Range(0f, 10f)] [SerializeField] public float m_TurnSpeedRobot = 3.0f;   // How fast the rig will rotate from user input.
+		[SerializeField] private float m_TurnSmoothingRobot = 1.0f;                // How much smoothing to apply to the turn input, to reduce mouse-turn jerkiness
+		[SerializeField] private Vector3 m_PivotPositionRobot = new Vector3(10.0f, 35.0f, 0.0f);
+		[SerializeField] private Vector3 m_CamPositionRobot = new Vector3(0.0f, 0.0f, -20.0f);
         [SerializeField] private float m_TiltMax = 75f;                       // The maximum value of the x axis rotation of the pivot.
         [SerializeField] private float m_TiltMin = 45f;                       // The minimum value of the x axis rotation of the pivot.
         [SerializeField] private bool m_LockCursor = false;                   // Whether the cursor should be hidden and locked.
         [SerializeField] private bool m_VerticalAutoReturn = false;           // set wether or not the vertical axis should auto return
+		[SerializeField] private ProtectCameraFromWallClip m_WallProtect;
 
         private float m_LookAngle;                    // The rig's y axis rotation.
         private float m_TiltAngle;                    // The pivot's x axis rotation.
@@ -38,6 +47,8 @@ namespace UnityStandardAssets.Cameras
 
 	        m_PivotTargetRot = m_Pivot.transform.localRotation;
 			m_TransformTargetRot = transform.localRotation;
+
+
         }
 
 
@@ -57,6 +68,21 @@ namespace UnityStandardAssets.Cameras
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
+
+		public void SetupCamera(Boolean isRobot){
+			if(isRobot){
+				m_Pivot.localPosition = m_PivotPositionRobot;
+				m_TurnSpeed = m_TurnSpeedRobot;
+				m_TurnSmoothing = m_TurnSmoothingRobot;
+				m_WallProtect.SetNewDist(m_CamPositionRobot);
+			}
+			else{
+				m_Pivot.localPosition = m_PivotPositionSoldier;
+				m_TurnSpeed = m_TurnSpeedSoldier;
+				m_TurnSmoothing = m_TurnSmoothingSoldier;
+				m_WallProtect.SetNewDist(m_CamPositionSoldier);
+			}
+		}
 
 
         protected override void FollowTarget(float deltaTime)

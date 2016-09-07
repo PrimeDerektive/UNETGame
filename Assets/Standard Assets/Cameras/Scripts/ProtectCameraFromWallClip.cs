@@ -111,6 +111,11 @@ namespace UnityStandardAssets.Cameras
             m_Cam.localPosition = -Vector3.forward*m_CurrentDist;
         }
 
+		public void SetNewDist(Vector3 dist){
+			m_OriginalDist = dist.magnitude;
+			m_CurrentDist = m_OriginalDist;
+		}
+
 
         // comparer for check distances in ray cast hits
         public class RayHitComparer : IComparer
