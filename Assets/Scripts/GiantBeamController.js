@@ -19,6 +19,9 @@ public class GiantBeamController extends NetworkBehaviour{
 	var beamSmoothing : float = 5.0;
 	var beamDuration : float = 10.0;
 
+	var cooldown : float = 10.0;
+	var currentCooldown : float = 0.0;
+
 	var beamStopSound : AudioClip;
 
 	var aimTarget : Transform;
@@ -41,7 +44,8 @@ public class GiantBeamController extends NetworkBehaviour{
 		//only the local player controls input
 		if(isLocalPlayer){
 
-			if(Input.GetButtonDown("Fire1") && !firing){
+			if(Input.GetButtonDown("Fire1") && !firing && currentCooldown <= 0.0){
+				//client side prediction
 				StartCoroutine(StartBeam());
 				//tell the server we're firing
 				CmdStartBeam();
@@ -53,12 +57,15 @@ public class GiantBeamController extends NetworkBehaviour{
 
 	@Command
 	function CmdStartBeam(){
+		//don't do anything the client's cooldown isn't reset, he's cheating
+		if(currentCooldown > 0.0) return;
 		//tell the clients he's firing
 		RpcStartBeam();
 	}
 
 	@ClientRpc
 	function RpcStartBeam(){
+		//local client already started function with client side prediction
 		if(isLocalPlayer) return;
 		StartCoroutine(StartBeam());
 	}
@@ -119,6 +126,7 @@ public class GiantBeamController extends NetworkBehaviour{
 		audioSource.Stop();
 		audioSource.PlayOneShot(beamStopSound, 1.0);
 		StopBeam();
+		StartCoroutine(ResetCooldown());
 		firing = false;
 
 	}
@@ -130,6 +138,36 @@ public class GiantBeamController extends NetworkBehaviour{
 		beamEndSurface.Stop();
 		beamLight.SetActive(false);
 		beam.SetActive(false);
+	}
+
+	function ResetCooldown(){
+		currentCooldown = cooldown;
+		//estimate transit time on the server,
+		//if the server is not this player
+		if(isServer && !isLocalPlayer){
+			//get the transit time of this RPC
+			var netError : byte;
+			var transitTimeMS : int = NetworkTransport.GetCurrentRtt(
+	            connectionToClient.hostId,
+	            connectionToClient.connectionId,
+	            netError);
+	        //convert ms to seconds, but divide by 2 first because it was a one way message
+	        var transitTime : float = (transitTimeMS/2) * 0.001;
+	        Debug.Log(transitTime);
+	        //subtract the transit time from the cooldown
+	        currentCooldown -= transitTime;
+		}
+		while(currentCooldown > 0.0){
+			currentCooldown -= Time.deltaTime;
+			yield;
+		}
+		currentCooldown = 0.0;
+	}
+
+	function OnGUI(){
+		if(isLocalPlayer){
+			GUI.Label(Rect (Screen.width - 160, 10, 150, 30), "Beam Cooldown: " + currentCooldown.ToString("F1"));
+		}
 	}
 
 }

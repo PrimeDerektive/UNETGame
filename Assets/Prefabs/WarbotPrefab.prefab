@@ -82,10 +82,10 @@ GameObject:
   - 114: {fileID: 11449550}
   - 114: {fileID: 11430848}
   - 114: {fileID: 11454194}
-  - 114: {fileID: 11410846}
   - 82: {fileID: 8279000}
   - 114: {fileID: 11434076}
   - 114: {fileID: 11438418}
+  - 114: {fileID: 11410846}
   - 114: {fileID: 11456204}
   - 114: {fileID: 11460044}
   m_Layer: 0
@@ -4015,7 +4015,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104734}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c66dbe39a52daf45a001d9aaa79f88a, type: 3}
   m_Name: 
@@ -4033,6 +4033,8 @@ MonoBehaviour:
   beamEndSurface: {fileID: 19888912}
   beamSmoothing: 10
   beamDuration: 10
+  cooldown: 10
+  currentCooldown: 0
   beamStopSound: {fileID: 8300000, guid: f617da0ea74bef14db8b2e20e43285bf, type: 3}
   aimTarget: {fileID: 416012}
   firing: 0
@@ -4044,7 +4046,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104734}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1a6d1e6b04031548be648a1ff92ea9e, type: 3}
   m_Name: 
