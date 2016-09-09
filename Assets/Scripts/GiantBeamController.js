@@ -70,6 +70,7 @@ public class GiantBeamController extends NetworkBehaviour{
 		StartCoroutine(StartBeam());
 	}
 
+	var onSurface = false;
 
 	function StartBeam(){
 		firing = true;
@@ -93,32 +94,26 @@ public class GiantBeamController extends NetworkBehaviour{
 			yield WaitForEndOfFrame();
 			i += Time.deltaTime * rate;
 
-			var onSurface = false;
+			//var onSurface = false;
 			var hit : RaycastHit;
 			var dirToBeamEnd = (beamEnd.position - beamFire.transform.position).normalized;
 			beamEnd.position = Vector3.Lerp(beamEnd.position, aimTarget.position - dirToBeamEnd, Time.deltaTime * beamSmoothing);
 			beamEnd.forward = dirToBeamEnd;
-			var rayDistance = Vector3.Distance(beamFire.transform.position, beamEnd.position) + 10.0;
+			var rayDistance = Vector3.Distance(beamFire.transform.position, beamEnd.position) + 5.0;
 			if(Physics.Raycast(beamFire.transform.position, dirToBeamEnd, hit, rayDistance, aimTargetController.layerMask)){
 				onSurface = true;
 			}
+			else{
+				onSurface = false;
+			}
 
 			if(onSurface){
-				if(!beamEndSurface.isPlaying){
-					beamEndSurface.Play();
-				}
-				if(beamEndAir.isPlaying){
-					beamEndAir.Stop();
-				}
-
+				beamEndSurface.Play();
+				beamEndAir.Stop();
 			}
 			else{
-				if(beamEndSurface.isPlaying){
-					beamEndSurface.Stop();
-				}
-				if(!beamEndAir.isPlaying){
-					beamEndAir.Play();
-				}
+				beamEndSurface.Stop();
+				beamEndAir.Play();
 			}
 
 		}//eof while
