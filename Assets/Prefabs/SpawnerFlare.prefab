@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 485690}
   - 82: {fileID: 8293074}
   - 114: {fileID: 11491414}
-  - 114: {fileID: 11422482}
   - 114: {fileID: 11483304}
   m_Layer: 0
   m_Name: SpawnerFlare
@@ -154,6 +153,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &176128
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 482620}
+  - 96: {fileID: 9675498}
+  m_Layer: 0
+  m_Name: Trail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &194470
 GameObject:
   m_ObjectHideFlags: 1
@@ -211,18 +226,19 @@ Transform:
   - {fileID: 435930}
   - {fileID: 491144}
   m_Father: {fileID: 467894}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!4 &467894
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159884}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 0.15000008}
+  m_LocalRotation: {x: -0.70710665, y: 0, z: 0, w: 0.70710695}
+  m_LocalPosition: {x: 0, y: 0.00000006705723, z: 0.15000448}
   m_LocalScale: {x: 1.5463146, y: 1.5463145, z: 1.5463145}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
   m_Children:
+  - {fileID: 482620}
   - {fileID: 498498}
   - {fileID: 474988}
   - {fileID: 483966}
@@ -242,7 +258,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 467894}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!4 &474988
 Transform:
   m_ObjectHideFlags: 1
@@ -255,7 +271,20 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 467894}
-  m_RootOrder: 1
+  m_RootOrder: 2
+--- !u!4 &482620
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 467894}
+  m_RootOrder: 0
 --- !u!4 &483966
 Transform:
   m_ObjectHideFlags: 1
@@ -268,17 +297,17 @@ Transform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 467894}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!4 &485690
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 101746}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -12.184386, y: -2, z: 36.28543}
+  m_LocalRotation: {x: 0.00000022351742, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -51.421288, y: -2, z: 75.02809}
   m_LocalScale: {x: 0.64669895, y: 0.646699, z: 0.646699}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 467894}
   m_Father: {fileID: 0}
@@ -310,7 +339,7 @@ Transform:
   m_Children:
   - {fileID: 423420}
   m_Father: {fileID: 467894}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!82 &8293074
 AudioSource:
   m_ObjectHideFlags: 1
@@ -321,7 +350,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0ec1a251d2f5fc342980aa8d290f44c1, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
@@ -385,6 +414,53 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!96 &9675498
+TrailRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176128}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1a8eb290d9ffa53489d076ac4c51e73b, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Time: 0.25
+  m_StartWidth: 0.28
+  m_EndWidth: 0.05
+  m_Colors:
+    m_Color[0]:
+      serializedVersion: 2
+      rgba: 0
+    m_Color[1]:
+      serializedVersion: 2
+      rgba: 4227858431
+    m_Color[2]:
+      serializedVersion: 2
+      rgba: 2197815295
+    m_Color[3]:
+      serializedVersion: 2
+      rgba: 16777215
+    m_Color[4]:
+      serializedVersion: 2
+      rgba: 16777215
+  m_MinVertexDistance: 0.1
+  m_Autodestruct: 0
 --- !u!108 &10815750
 Light:
   m_ObjectHideFlags: 1
@@ -418,26 +494,6 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
---- !u!114 &11422482
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
-  m_SendInterval: 0
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 0
-  m_MovementTheshold: 0.001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
 --- !u!114 &11483304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -449,12 +505,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9749bb335a7655a45b8efdafffdf180d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  origin: {x: 0, y: 0, z: 0}
+  destination: {x: 0, y: 0, z: 0}
   robotPrefab: {fileID: 102334, guid: 9e1ba43fda923614ca1c0297a7f464f7, type: 2}
   spawnRadius: 10
   spawnerLayer:
     serializedVersion: 2
     m_Bits: 1024
   robotsToSpawn: 5
+  delayBeforeSpawns: 5
+  timeBetweenSpawns: 0.5
+  explosionPrefab: {fileID: 127356, guid: 9533fb489c408fa46b8d874d69ea8993, type: 2}
+  beacon: {fileID: 120552}
+  audioSource: {fileID: 0}
 --- !u!114 &11491414
 MonoBehaviour:
   m_ObjectHideFlags: 1

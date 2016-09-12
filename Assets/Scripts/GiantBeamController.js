@@ -141,14 +141,7 @@ public class GiantBeamController extends NetworkBehaviour{
 		//if the server is not this player
 		if(isServer && !isLocalPlayer){
 			//get the transit time of this RPC
-			var netError : byte;
-			var transitTimeMS : int = NetworkTransport.GetCurrentRtt(
-	            connectionToClient.hostId,
-	            connectionToClient.connectionId,
-	            netError);
-	        //convert ms to seconds, but divide by 2 first because it was a one way message
-	        var transitTime : float = (transitTimeMS/2) * 0.001;
-	        Debug.Log(transitTime);
+			var transitTime = Utilities.GetTransitTime(connectionToClient);
 	        //subtract the transit time from the cooldown
 	        currentCooldown -= transitTime;
 		}

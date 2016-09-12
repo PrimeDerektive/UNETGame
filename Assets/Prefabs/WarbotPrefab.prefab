@@ -1917,7 +1917,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104734}
   m_LocalRotation: {x: 0, y: 0.9645153, z: 0, w: -0.26402706}
-  m_LocalPosition: {x: 12.1812725, y: -2, z: 42.92374}
+  m_LocalPosition: {x: -2.7524102, y: -2, z: 40.684715}
   m_LocalScale: {x: 6.5, y: 7.5, z: 7.5}
   m_LocalEulerAnglesHint: {x: 0, y: 210.6183, z: 0}
   m_Children:
@@ -4015,7 +4015,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104734}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c66dbe39a52daf45a001d9aaa79f88a, type: 3}
   m_Name: 
@@ -4040,13 +4040,14 @@ MonoBehaviour:
   firing: 0
   audioSource: {fileID: 0}
   aimTargetController: {fileID: 0}
+  onSurface: 0
 --- !u!114 &11460044
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104734}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1a6d1e6b04031548be648a1ff92ea9e, type: 3}
   m_Name: 
@@ -4057,9 +4058,13 @@ MonoBehaviour:
   aimDownSound: {fileID: 8300000, guid: 8460010bf997af64385bb2aa7c25517c, type: 3}
   barrel: {fileID: 459316}
   muzzleFlash: {fileID: 19839892}
-  projectile: {fileID: 170336, guid: b89dfc2eed9ccd545986e966e8182fdd, type: 2}
-  fireSound: {fileID: 8300000, guid: b968887d223d33841b30669aeaace1cf, type: 3}
-  spawnerProjectile: {fileID: 136604, guid: df9d1bd543effe84c92f639744ebe9a4, type: 2}
+  maxLaserBoltAmmo: 10
+  currentLaserBoltAmmo: 10
+  laserBoltFireRate: 0.5
+  laserBoltRechargeRate: 5
+  laserBoltProjectile: {fileID: 170336, guid: b89dfc2eed9ccd545986e966e8182fdd, type: 2}
+  laserBoltFireSound: {fileID: 8300000, guid: 39aa81bf57c7ace4ea4293950aa6f8f1, type: 3}
+  spawnerProjectile: {fileID: 101746, guid: 483c3a56f6960b74885631d877051d0b, type: 2}
   spawnerLayer:
     serializedVersion: 2
     m_Bits: 1024
@@ -4067,6 +4072,8 @@ MonoBehaviour:
   cantFireSpawnerSound: {fileID: 8300000, guid: 3bf7f47a4f179f8439b510c6f8593d72,
     type: 3}
   spawnerPrefab: {fileID: 101746, guid: 483c3a56f6960b74885631d877051d0b, type: 2}
+  spawnerCooldown: 20
+  currentSpawnerCooldown: 0
   audioSource: {fileID: 0}
   fbbik: {fileID: 0}
 --- !u!114 &11476138
@@ -5776,7 +5783,7 @@ ParticleSystem:
   randomSeed: 0
   looping: 1
   prewarm: 1
-  playOnAwake: 1
+  playOnAwake: 0
   moveWithTransform: 1
   scalingMode: 2
   InitialModule:
@@ -10168,7 +10175,7 @@ ParticleSystem:
   randomSeed: 0
   looping: 1
   prewarm: 1
-  playOnAwake: 1
+  playOnAwake: 0
   moveWithTransform: 1
   scalingMode: 2
   InitialModule:
@@ -11652,7 +11659,7 @@ ParticleSystem:
   randomSeed: 0
   looping: 1
   prewarm: 1
-  playOnAwake: 1
+  playOnAwake: 0
   moveWithTransform: 1
   scalingMode: 2
   InitialModule:
@@ -20471,7 +20478,7 @@ ParticleSystem:
   randomSeed: 0
   looping: 1
   prewarm: 1
-  playOnAwake: 1
+  playOnAwake: 0
   moveWithTransform: 1
   scalingMode: 2
   InitialModule:
@@ -24883,7 +24890,7 @@ ParticleSystem:
   randomSeed: 0
   looping: 1
   prewarm: 1
-  playOnAwake: 1
+  playOnAwake: 0
   moveWithTransform: 0
   scalingMode: 2
   InitialModule:
@@ -35186,7 +35193,7 @@ ParticleSystem:
   randomSeed: 0
   looping: 1
   prewarm: 1
-  playOnAwake: 1
+  playOnAwake: 0
   moveWithTransform: 1
   scalingMode: 2
   InitialModule:
@@ -36655,7 +36662,7 @@ ParticleSystem:
   randomSeed: 0
   looping: 1
   prewarm: 1
-  playOnAwake: 1
+  playOnAwake: 0
   moveWithTransform: 0
   scalingMode: 2
   InitialModule:

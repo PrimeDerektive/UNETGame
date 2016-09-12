@@ -28,7 +28,7 @@ public class AI_StateController extends NetworkBehaviour{
 
 	function OnStartServer(){
 		//server evaluates state and determines transitions 10x per second
-		InvokeRepeating("EvaluateState", 0.0, 0.1);
+		InvokeRepeating("EvaluateState", 0.1, 0.1);
 	}
 
 	function OnStartClient(){
@@ -47,20 +47,35 @@ public class AI_StateController extends NetworkBehaviour{
 		//store the current animation state
 		var currentAnimState = anim.GetCurrentAnimatorStateInfo(0);
 
+		//no matter the state we're in, if we're somehow without a target we should go to idle
+		if(!target.Value){
+			TransitionEvent("GoToIdle");
+		}
+
 		switch(currentState){
 
 			case "Idle":
 				//we're only in the idle state if we have no target, so find one
 
 				//get the first object we find with the Player tag
-				var newTarget = GameObject.FindGameObjectWithTag("Player");
+				var potentialTargets = GameObject.FindGameObjectsWithTag("Player");
+				//temporarily select the first target
+				var newTarget : GameObject = potentialTargets[0];
+				//then find the closest target
+				for(var potentialTarget in potentialTargets){
+					//if this potential target is closer than our last potential target
+					if(Vector3.Distance(potentialTarget.transform.position, transform.position) < Vector3.Distance(newTarget.transform.position, transform.position)){
+						newTarget = potentialTarget;
+					}
+				}
 
 				//if we find one
 				if(newTarget != null){
 					//set the target on the server
 					target.Value = newTarget;
+					var syncTargetNetworkIdentity = newTarget.GetComponent.<NetworkIdentity>();
 					//set the syncTargetNetId SyncVar so the clients can find the target
-					syncTargetNetId = newTarget.GetComponent.<NetworkIdentity>().netId;
+					if(syncTargetNetworkIdentity) syncTargetNetId = syncTargetNetworkIdentity.netId;
 					//we found a target, go to the seeking target state
 					TransitionEvent("GoToSeekingTarget");
 				}
@@ -96,10 +111,10 @@ public class AI_StateController extends NetworkBehaviour{
 	}
 
 	//SyncVar hook
-	function OnSyncTargetUpdate(newsyncTargetNetId : NetworkInstanceId){
+	function OnSyncTargetUpdate(newSyncTargetNetId : NetworkInstanceId){
 		if(isServer) return;
 		//set the blackboard target variable to the object we find with the netId
-		var newTarget = ClientScene.FindLocalObject(newsyncTargetNetId);
+		var newTarget = ClientScene.FindLocalObject(newSyncTargetNetId);
 
 		//if our current target value (this includes null) doesn't equal the new target
 		if(target.Value != newTarget)

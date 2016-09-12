@@ -1481,7 +1481,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184116}
-  m_LocalRotation: {x: 0.6798882, y: 0.7330598, z: 0.011128185, w: -0.01585805}
+  m_LocalRotation: {x: 0.67988825, y: 0.7330599, z: 0.011128186, w: -0.015858052}
   m_LocalPosition: {x: -0.708, y: -0.259, z: 0.027}
   m_LocalScale: {x: 0.9137137, y: 0.55276453, z: 0.835161}
   m_LocalEulerAnglesHint: {x: -2.1708, y: -179.5345, z: 85.6809}
@@ -2044,7 +2044,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 610, y: -80}
   m_Transitions: []
-  m_CachedInstanceID: 36626
+  m_CachedInstanceID: 36740
   m_Target: {fileID: 102334}
   m_MonoBehaviour: {fileID: 11431386}
 --- !u!114 &11425508
@@ -2109,6 +2109,11 @@ MonoBehaviour:
     m_Blackboard: {fileID: 11426604}
     m_IsConstant: 0
     m_IsSystem: 0
+  - m_ID: 746037824
+    m_Name: GoToIdle
+    m_Blackboard: {fileID: 11426604}
+    m_IsConstant: 0
+    m_IsSystem: 0
   m_Namespace: 
 --- !u!114 &11427362
 MonoBehaviour:
@@ -2128,7 +2133,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 610, y: -160}
   m_Transitions: []
-  m_CachedInstanceID: 36630
+  m_CachedInstanceID: 36744
   m_Target: {fileID: 102334}
   m_MonoBehaviour: {fileID: 11489060}
 --- !u!114 &11431386
@@ -2242,7 +2247,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 610, y: -240}
   m_Transitions: []
-  m_CachedInstanceID: 36618
+  m_CachedInstanceID: 36732
   m_Target: {fileID: 102334}
   m_MonoBehaviour: {fileID: 11406314}
 --- !u!114 &11469664
@@ -2269,7 +2274,9 @@ MonoBehaviour:
     m_EventID: 507425973
   - m_Destination: {fileID: 11419662}
     m_EventID: 173484231
-  m_CachedInstanceID: 36634
+  - m_Destination: {fileID: 11496670}
+    m_EventID: 746037824
+  m_CachedInstanceID: 36748
   m_CanTransitionToSelf: 0
 --- !u!114 &11476798
 MonoBehaviour:
@@ -2342,7 +2349,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 36612
+  m_CachedInstanceID: 36726
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -2390,7 +2397,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 610, y: -320}
   m_Transitions: []
-  m_CachedInstanceID: 36614
+  m_CachedInstanceID: 36728
   m_Target: {fileID: 102334}
   m_MonoBehaviour: {fileID: 11406254}
 --- !u!135 &13580460

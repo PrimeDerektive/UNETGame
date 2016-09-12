@@ -1,4 +1,5 @@
 ﻿#pragma strict
+import UnityEngine.Networking;
 
 //this function calculates the target rotation angle of an object
 //that is turning, relative to the target direction
@@ -10,6 +11,17 @@ static function FindNetworkObject(id : uint) : NetworkIdentity{
 			return netObject;
 		}
 	}
+}
+
+static function GetTransitTime(conn : NetworkConnection) : float{
+	var netError : byte;
+	var transitTimeMS : int = NetworkTransport.GetCurrentRtt(
+        conn.hostId,
+        conn.connectionId,
+        netError);
+    //convert ms to seconds, but divide by 2 first because it was a one way message
+    var transitTime : float = (transitTimeMS/2) * 0.001;
+   return transitTime;
 }
 
 static function FindTurningAngle(currentForward : Vector3, targetForward : Vector3) : float{
